@@ -27,9 +27,9 @@
                     </svg>
                 </span>
                 <span
-                    class="absolute flex items-center justify-center w-full h-full text-zinc-600 transition-all duration-300 transform group-hover:translate-x-full ease dark:text-white">Comenzar 
+                    class="absolute flex items-center justify-center w-full h-full text-zinc-600 transition-all duration-300 transform group-hover:translate-x-full ease dark:text-white">Comenzar
                     </span>
-                <span class="relative invisible dark:text-white">Mulai Belajar</span>
+                <span class="relative invisible dark:text-white">Comienza a aprender</span>
             </a>
         </div>
         <!--  -->
@@ -210,10 +210,7 @@ Dependiendo del tipo de curso que elijas, algunos cursos pueden requerir una tar
                             <div class="border-l-2 border-blue-600 overflow-hidden max-h-0 duration-500 transition-all"
                                 x-ref="tab" :style="handleToggle()">
                                 <p class="p-3 text-zinc-900 dark:text-white">
-                                    Untuk mendaftar, klik tombol "Registrasi" yang terdapat di halaman utama. Isi
-                                    formulir pendaftaran dengan informasi yang diperlukan dan ikuti instruksi yang
-                                    diberikan. Setelah berhasil mendaftar, Anda akan dapat mengakses berbagai kursus
-                                    kami.
+                                    Para registrarte, haz clic en el botón "Registrate" que se encuentra en la página principal. Completa el formulario de registro con la información requerida y sigue las instrucciones proporcionadas. Una vez que te hayas registrado exitosamente, podrás acceder a nuestros diversos cursos.
                                 </p>
                             </div>
                         </li>
@@ -222,7 +219,7 @@ Dependiendo del tipo de curso que elijas, algunos cursos pueden requerir una tar
                             <h2 @click="handleClick()"
                                 class="flex flex-row justify-between items-center font-medium p-3 cursor-pointer dark:text-white">
                                 <span>
-                                    Apakah saya akan mendapatkan sertifikat setelah menyelesaikan kursus?
+                                    ¿Recibiré un certificado después de completar el curso?
                                 </span>
                                 <svg :class="handleRotate()"
                                     class="fill-current text-blue-700 dark:text-blue-500 h-6 w-6 transform transition-transform duration-500"
@@ -235,9 +232,7 @@ Dependiendo del tipo de curso que elijas, algunos cursos pueden requerir una tar
                             <div class="border-l-2 border-blue-600 overflow-hidden max-h-0 duration-500 transition-all"
                                 x-ref="tab" :style="handleToggle()">
                                 <p class="p-3 text-zinc-900 dark:text-white">
-                                    Ya, setelah Anda berhasil menyelesaikan kursus, Anda akan menerima sertifikat
-                                    keberhasilan yang dapat diunduh langsung dari akun Anda. Sertifikat ini akan
-                                    mencantumkan rincian kursus dan pencapaian Anda sebagai bukti partisipasi.
+                                    Sí, después de que hayas completado con éxito el curso, recibirás un certificado de éxito que podrás descargar directamente desde tu cuenta. Este certificado incluirá los detalles del curso y tus logros como prueba de tu participación.
                                 </p>
                             </div>
                         </li>
@@ -254,13 +249,13 @@ Dependiendo del tipo de curso que elijas, algunos cursos pueden requerir una tar
             <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16 ">
                 <div class="max-w-xl text-center mx-auto">
                     <h2 class="text-3xl font-bold tracking-tight sm:text-4xl dark:text-white">
-                        Testimoni
+                        Reseñas
                         <br class="hidden sm:block lg:hidden" />
-                        Pengguna
+                        de nuestros estudiantes
                     </h2>
 
                     <p class="mt-4 text-zinc-500 dark:text-white">
-                        Berikut adalah testimoni pengguna DNCC Learn yang telah menyelesaikan course.
+                        Aquí tienes los testimonios de usuarios que han completado algunos cursos.
                     </p>
 
                     <div class="hidden lg:mt-8 lg:flex lg:gap-4">
@@ -379,19 +374,15 @@ Dependiendo del tipo de curso que elijas, algunos cursos pueden requerir una tar
  background-image: url('landingpage/images/heroimage.jpeg');
  background-position: center;">
         <div class="py-20 md:py-36 bg-black/50 md:px-40 px-10 backdrop-blur-md">
-            <h2 class="font-bold md:text-4xl text-3xl text-center text-white">JADILAH MENTOR UNTUK MENGAJAR DI DNCC
-                LEARN</h2>
+            <h2 class="font-bold md:text-4xl text-3xl text-center text-white">UNETE COMO MENTOR AL GRUPO DEL LABORATORIO ODIN</h2>
 
-            <p class="text-center text-white pt-5 max-w-4xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Nesciunt nisi corrupti fugiat corporis eaque inventore laudantium deleniti nulla quae consectetur,
-                a recusandae earum quidem numquam aut quia, fugit, incidunt voluptatem? Vitae accusantium fugit
-                molestiae eaque. Quis dignissimos mollitia est quia?
+            <p class="text-center text-white pt-5 max-w-4xl mx-auto">Únete como mentor al grupo del Laboratorio Odin y comparte tu experiencia y conocimientos con nuestra comunidad. Como mentor, tendrás la oportunidad de guiar y apoyar a otros en su aprendizaje, contribuyendo al crecimiento y desarrollo de habilidades dentro de nuestro ambiente colaborativo. Tu participación no solo enriquecerá la experiencia de aprendizaje de nuestros miembros, sino que también te permitirá expandir tu red profesional y personal en un entorno dinámico y en constante evolución como el nuestro.
             </p>
 
             <div class="text-center mt-8">
                 <a href="https://wa.me/6281247430546"
                     class="w-full px-6 py-3 rounded-lg ml-2 text-base font-medium align-middle bg-blue-600 text-white select-none sm:mb-0 sm:w-auto hover:bg-blue-800 focus-within:bg-blue-800 focus-within:border-blue-800">
-                    Mulai Mengajar
+                    Unete ya!
                 </a>
             </div>
 

@@ -11,7 +11,7 @@
                     <div class="flex flex-wrap items-center">
                         <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                             <h3 class="font-semibold text-lg text-blueGray-700">
-                                Users Table
+                                Tabla de usuarios
                             </h3>
                         </div>
                     </div>
@@ -22,15 +22,15 @@
                             <tr>
                                 <th scope="col"
                                     class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    Name
+                                    Nombres y Apellidos
                                 </th>
                                 <th scope="col"
                                     class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    Email
+                                    Correo
                                 </th>
                                 <th scope="col"
                                     class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    Action
+                                    Acciones
                                 </th>
 
                             </tr>
@@ -57,7 +57,7 @@
                                             @method('DELETE')
                                             <button
                                                 class="bg-red-500 text-white active:bg-red-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                                type="submit">Delete</button>
+                                                type="submit">Eliminar</button>
                                         </form>
 
                                     </td>
@@ -68,8 +68,8 @@
                     <hr>
                     <div class="flex justify-between items-center py-3 px-6">
                         <div class="text-sm text-gray-700">
-                            Showing {{ $users->firstItem() }} to {{ $users->lastItem() }} of {{ $users->total() }}
-                            results
+                            Mostrando {{ $users->firstItem() }} a {{ $users->lastItem() }} de {{ $users->total() }}
+                            resultados
                         </div>
                         <div class="flex items-center gap-5">
                             <a href="  {{ $users->url(1) }}"><i class="fas fa-angle-double-left"></i>

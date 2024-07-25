@@ -33,7 +33,7 @@
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full px-4 max-w-full flex-grow flex-1 flex flex-wrap justify-between">
                                     <div class="font-semibold text-lg text-blueGray-700">
-                                       <h1 class="text-xl font-bold">Daftar Materi pada kursus ini</h1>
+                                       <h1 class="text-xl font-bold">Lista de materiales en este curso</h1>
                                     </div>
                                     <a href="{{ route('lesson.create', ['course_id' => $course->id]) }}" ><button
                                         class="w-10 h-10 border border-solid text-white bg-emerald-500 p-2 rounded-md hover:bg-emerald-700 m-2"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button></a>
@@ -50,15 +50,15 @@
                                     <tr>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Chapter
+                                            Capítulo
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Judul
+                                            Título
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Deskripsi
+                                            Descripción
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
@@ -87,7 +87,7 @@
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full px-4 max-w-full flex-grow flex-1 flex flex-wrap justify-between">
                                     <div class="font-semibold text-lg text-blueGray-700">
-                                       <h1 class="text-xl font-bold">Daftar anggota pada kursus ini</h1>
+                                       <h1 class="text-xl font-bold">Lista de miembros de este curso</h1>
                                     </div>
 
                                 </div>
@@ -107,11 +107,11 @@
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Nama Pengguna
+                                            Nombre de usuario
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Email
+                                            Correo electrónico
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">

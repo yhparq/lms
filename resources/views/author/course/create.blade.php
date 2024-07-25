@@ -15,7 +15,7 @@
                     <div class="rounded-t bg-white mb-0 px-6 py-6">
                         <div class="text-center flex justify-between">
                             <h6 class="text-blueGray-700 text-xl font-bold">
-                                Kursus baru
+                                Curso Nuevo
                             </h6>
                         </div>
                     </div>
@@ -30,9 +30,9 @@
                                         <path
                                             d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
                                     </svg>
-                                    <span class="sr-only">Danger</span>
+                                    <span class="sr-only">Peligro</span>
                                     <div>
-                                        <span class="font-medium">Harap Perhatikan:</span>
+                                        <span class="font-medium">Por favor, observe:</span>
                                         <ul class="mt-1.5 ml-4 list-disc list-inside">
                                             @foreach ($errors->all() as $error)
                                                 <li>{{ $error }}</li>
@@ -48,7 +48,7 @@
                             <div class="relative mt-10">
                                 <label for="floating_outlined"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    Judul Kursus
+                                    Título del curso
                                 </label>
                                 <input type="text" id="floating_outlined" name="title"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-slate-500 dark:focus:border-slate-500"
@@ -57,11 +57,10 @@
 
                             <div class="relative mt-6">
                                 <label for="countries"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
-                                    Kategori</label>
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Elegir Categoria</label>
                                 <select id="countries" name="id_category"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-slate-500 dark:focus:border-slate-500">
-                                    <option disabled selected>Pilih kategori</option>
+                                    <option disabled selected>Elegir Categoria</option>
                                     @foreach ($data as $category)
                                         <option class="focus:bg-neutral-700" value="{{ $category->id }}">
                                             {{ $category->name }}</option>
@@ -72,7 +71,7 @@
                             <div class="relative mt-6 hidden">
                                 <label for="floating_outlined"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    Masukkan Harga
+                                    Introducir Precio
                                 </label>
                                 <input type="hidden" id="floating_outlined" name="price" value="0"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-slate-500 dark:focus:border-slate-500"
@@ -81,7 +80,7 @@
 
                             <div class="relative mt-6">
                                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                    for="file_input">Upload thumbnail</label>
+                                    for="file_input">Subir miniatura</label>
                                 <input name="photo"
                                     class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                                     aria-describedby="file_input_help" id="file_input" type="file">
@@ -99,16 +98,15 @@
                             </div> --}}
                             <div class="relative mt-6">
                                 <label for="desc-trix"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi
-                                kursus</label>
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descripción del curso</label>
                                 <input id="desc-trix" type="hidden" name="description">
                                 <trix-editor class="bg-gray-50" input="desc-trix"></trix-editor>
                             </div>
                             <div class="w-full flex justify-end">
                                 <button type="submit" name="with_draft" value="0"
-                                    class="self-end w-32 mt-10 focus:outline-none text-slate-800 hover:text-white border border-slate-800 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-slate-500 dark:text-slate-500 dark:hover:text-white dark:hover:bg-neutral-700 dark:focus:ring-slate-800">simpan</button>
+                                    class="self-end w-32 mt-10 focus:outline-none text-slate-800 hover:text-white border border-slate-800 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-slate-500 dark:text-slate-500 dark:hover:text-white dark:hover:bg-neutral-700 dark:focus:ring-slate-800">guardar</button>
                                 <button type="submit"
-                                    class="self-end w-32 mt-10 focus:outline-none text-white border border-slate-800 bg-slate-800 hover:bg-neutral-800 focus:ring-4 focus:ring-neutral-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-neutral-700 dark:hover:bg-slate-700 dark:focus:ring-slate-800">kirim</button>
+                                    class="self-end w-32 mt-10 focus:outline-none text-white border border-slate-800 bg-slate-800 hover:bg-neutral-800 focus:ring-4 focus:ring-neutral-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-neutral-700 dark:hover:bg-slate-700 dark:focus:ring-slate-800">enviar</button>
                             </div>
                         </form>
                     </div>

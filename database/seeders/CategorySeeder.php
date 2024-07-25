@@ -15,25 +15,25 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create([
-            'name' => 'web programming',
+            'name' => 'Programacion Web',
             'photo' => 'landingpage/images/icons/web.svg',
             'description' => 'Mempelajari cara membuat sebuah website yang bagus dan menarik',
         ]);
 
         Category::create([
-            'name' => 'mobile programming',
+            'name' => 'Programacion movil',
             'photo' => 'landingpage/images/icons/mobile.svg',
             'description' => 'Mempelajari cara membuat aplikasi mobile berbasis android maupun ios',
         ]);
 
         Category::create([
-            'name' => 'game programming',
+            'name' => 'Programacion de videojuegos',
             'photo' => 'landingpage/images/icons/game.svg',
             'description' => 'Mempelajari cara membuat aplikasi game yang banyak digemari orang',
         ]);
 
         Category::create([
-            'name' => 'data analysis',
+            'name' => 'Analisis de datos',
             'photo' => 'landingpage/images/icons/dataAnalis.svg',
             'description' => 'mempelajari berbagai konsep, teknik, dan alat yang digunakan untuk mengumpulkan, membersihkan, menganalisis, menginterpretasi, dan mengambil keputusan berdasarkan data.',
         ]);

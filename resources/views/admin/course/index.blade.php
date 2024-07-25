@@ -13,11 +13,11 @@
                     <div class="flex flex-wrap items-center">
                         <div class="relative flex flex-row justify-between w-full max-w-full px-6">
                             <h3 class="text-lg font-semibold text-blueGray-700">
-                                Courses Table
+                                Tabla de Cursos
                             </h3>
                             <button data-modal-target="medium-modal" data-modal-toggle="medium-modal" type="button"
-                                class="p-1 px-3 text-sm font-semibold text-white bg-orange-500 rounded-md hover:bg-orange-600">List
-                                Voucher</button>
+                                class="p-1 px-3 text-sm font-semibold text-white bg-orange-500 rounded-md hover:bg-orange-600">Lista de
+                                Vouchers</button>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                             <!-- Modal header -->
                             <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
                                 <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                    List Voucher
+                                    Lista de Vouchers
                                 </h3>
                                 <button type="button"
                                     class="inline-flex items-center justify-center w-8 h-8 ml-auto text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -50,7 +50,7 @@
                                         <tr>
                                             <th scope="col"
                                                 class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                                ID Voucher
+                                                ID de Voucher
                                             </th>
                                             <th scope="col"
                                                 class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
@@ -58,7 +58,7 @@
                                             </th>
                                             <th scope="col"
                                                 class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                                Action
+                                                Acciones
                                             </th>
 
                                         </tr>
@@ -93,7 +93,7 @@
                                     </tbody>
                                 </table>
                                 <hr>
-                                <p class="font-semibold">Add Voucher</p>
+                                <p class="font-semibold">Agregar Voucher</p>
                                 <form method="post" action="{{ route('voucher.store') }}">
                                     @csrf
                                     <div class="mb-6">
@@ -105,7 +105,7 @@
                                             required>
                                     </div>
                                     <button type="submit"
-                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar</button>
                                 </form>
                             </div>
 
@@ -119,27 +119,27 @@
                             <tr>
                                 <th scope="col"
                                     class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    ID Course
+                                    ID de Curso
                                 </th>
                                 <th scope="col"
                                     class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    Creator
+                                    Creador
                                 </th>
                                 <th scope="col"
                                     class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    Course Title
+                                    Titulo del Curso
                                 </th>
                                 <th scope="col"
                                     class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100 ">
-                                    Description
+                                    Descripción
                                 </th>
                                 <th scope="col"
                                     class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    Photo
+                                    Foto
                                 </th>
                                 <th scope="col"
                                     class="px-3 py-3 text-xs font-semibold text-left uppercase align-middle border border-l-0 border-r-0 border-solid whitespace-nowrap bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                    Action
+                                    Acciones
                                 </th>
 
                             </tr>
@@ -192,9 +192,9 @@
                     </table>
                     <div class="flex items-center justify-between px-6 py-3">
                         <div class="text-sm text-gray-700">
-                            Showing {{ $courses->firstItem() }} to {{ $courses->lastItem() }} of
+                            Mostrando {{ $courses->firstItem() }} a {{ $courses->lastItem() }} de
                             {{ $courses->total() }}
-                            results
+                            resultados
                         </div>
                         <div class="flex items-center gap-2">
                             <a href="  {{ $courses->url(1) }}"><i class="fas fa-angle-double-left"></i>

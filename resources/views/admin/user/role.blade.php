@@ -60,13 +60,13 @@
                                 </span>
                             @enderror
                             <button class="bg-blue-500 p-2 mt-2 rounded-md hover:bg-blue-700 text-white"
-                                type="submit">Assign</button>
+                                type="submit">Asignar</button>
                         </div>
 
                     </form>
                     <div class="mt-6 p-2">
                         {{-- ! Ini permission user nya! --}}
-                        <h2 class="text-2xl font-semibold">Permissions</h2>
+                        <h2 class="text-2xl font-semibold">Permisos</h2>
                         <div>
                             {{-- ! Ini tampilkan semua Roles user nya! --}}
                             @if ($user->permissions)
@@ -90,7 +90,7 @@
                         @csrf
 
                         <div class="relative z-0 w-full mb-6 group p-2">
-                            <label for="permission" class="block mb-2 text-sm font-medium text-gray-900 ">Permission</label>
+                            <label for="permission" class="block mb-2 text-sm font-medium text-gray-900 ">Permisos</label>
                             <select id="permission" name="permission"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
@@ -104,7 +104,7 @@
                                 </span>
                             @enderror
                             <button class="bg-blue-500 mt-2 p-2 rounded-md hover:bg-blue-700 text-white"
-                                type="submit">Assign</button>
+                                type="submit">Asignar</button>
                         </div>
 
                     </form>

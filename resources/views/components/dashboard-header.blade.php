@@ -7,7 +7,7 @@
                 Dashboard {{ request()->user()->roles[0]['name'] }}
             </a>
             <div class="text-zinc-500 hidden lg:block dark:text-zinc-400">
-                selamat datang, {{ auth()->user()->name }}
+                Bienvenido {{ auth()->user()->name }}
             </div>
         </div>
         <div class="flex gap-2">

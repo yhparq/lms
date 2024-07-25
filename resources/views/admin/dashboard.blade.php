@@ -38,7 +38,7 @@
                             <div class=" flex flex-wrap items-center">
                                 <div class="relative w-full max-w-full flex-grow flex-1">
                                     <h6 class="text-gray-600 uppercase text-blueGray-100 mb-1 text-xs font-semibold">
-                                        Ringkasan
+                                        Resumen
                                     </h6>
                                     <h2 class="text-xl font-bold ">
                                         Stastitik pemasukan tahun {{ date('Y') }}
@@ -68,11 +68,11 @@
                             <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
                                 <div class=" flex flex-wrap items-center">
                                     <div class="relative w-full max-w-full flex-grow flex-1">
-                                        <h6 class="text-gray-600 uppercase text-blueGray-100 mb-1 text-xs font-semibold">
-                                            Ringkasan
+                                        <h6 class="text-white uppercase text-blueGray-100 mb-1 text-xs font-semibold">
+                                            Resumen
                                         </h6>
                                         <h2 class="text-xl font-bold ">
-                                            Stastitik pembelian kursus
+                                            Estadísticas de los cursos.
                                         </h2>
                                     </div>
                                 </div>
@@ -105,14 +105,14 @@
                                         <div class="flex flex-wrap items-center">
                                             <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                                                 <h3 class="font-semibold text-base text-blueGray-700">
-                                                    Kursus dengan pembeli terbanyak bulan ini
+                                                    Curso con más participantes de este mes.
                                                 </h3>
                                             </div>
                                             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                                 <a href="author/course"
                                                     class="bg-primary text-white active:bg-neutral-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                     type="button">
-                                                    lihat semua
+                                                    Ver todos
                                                 </a>
                                             </div>
                                         </div>
@@ -124,19 +124,19 @@
                                                 <tr>
                                                     <th
                                                         class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                        Kursus
+                                                        Cursos
                                                     </th>
                                                     <th
                                                         class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                        kategori
+                                                        Categorias
                                                     </th>
                                                     <th
                                                         class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                        status
+                                                        Estado
                                                     </th>
                                                     <th
                                                         class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                        jumlah anggota
+                                                        Cantidad de participantes
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -173,14 +173,14 @@
                                         <div class="flex flex-wrap items-center">
                                             <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                                                 <h3 class="font-semibold text-base text-blueGray-700">
-                                                    kursus dengan lulusan terbanyak bulan ini
+                                                    Curso con más graduados de este mes
                                                 </h3>
                                             </div>
                                             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                                 <a href="/author/course"
                                                     class="bg-primary text-white active:bg-neutral-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                     type="button">
-                                                    lihat semua
+                                                    Ver todos
                                                 </a>
                                             </div>
                                         </div>
@@ -192,15 +192,15 @@
                                                 <tr>
                                                     <th
                                                         class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                        kursus
+                                                        Cursos
                                                     </th>
                                                     <th
                                                         class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                        kategori
+                                                        Categoria
                                                     </th>
                                                     <th
                                                         class="text-center px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px">
-                                                        jumlah anggota
+                                                        Cantidad de participantes
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -305,7 +305,7 @@
                             "Des"
                         ],
                         datasets: [{
-                                label: "pembeli",
+                                label: "participantes",
                                 fill: false,
                                 backgroundColor: "#4f46e5",
                                 borderColor: "#4f46e5",
@@ -316,7 +316,7 @@
                                 ],
                             },
                             {
-                                label: "lulusan",
+                                label: "graduado",
                                 fill: false,
                                 backgroundColor: "#db2777",
                                 borderColor: "#db2777",
@@ -416,7 +416,7 @@
                             "Des"
                         ],
                         datasets: [{
-                            label: "pemasukan",
+                            label: "Ingresos",
                             fill: false,
                             backgroundColor: "#10b981",
                             borderColor: "#10b981",

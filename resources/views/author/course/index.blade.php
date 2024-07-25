@@ -32,12 +32,12 @@
                                                         stroke-linejoin="round" stroke-width="2"
                                                         d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                                 </svg>
-                                                <span class="sr-only">Search</span>
+                                                <span class="sr-only">Buscar</span>
                                             </button>
                                         </form>
                                     </div>
                                     <div class="flex">
-                                        <x-dropdown-button :sorts="$sorts" buttonColor="bg-slate-800" textColor="text-white"> urutkan </x-dropdown-button>
+                                        <x-dropdown-button :sorts="$sorts" buttonColor="bg-slate-800" textColor="text-white"> clasificar </x-dropdown-button>
                                     </div>
                                 </div>
                             </div>
@@ -56,15 +56,15 @@
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Kursus
+                                            Cursos
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            kategori
+                                            Categoria
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            status
+                                            Estado
                                         </th>
                                         {{-- <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
@@ -72,7 +72,7 @@
                                         </th> --}}
                                         <th
                                             class="text-center px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            jumlah peserta
+                                            Numero de participantes
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
@@ -167,7 +167,7 @@
                                                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                                         d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                                                 </svg>
-                                                                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">anda yakin ingin menghapus kursus
+                                                                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">¿Está seguro de que desea eliminar el curso?
                                                                     <b>{{ $course['title'] }}</b>
                                                                 </h3>
                                                                 <form action="{{ route('course.delete') }}" method="POST">
@@ -176,12 +176,12 @@
                                                                     <input type="hidden" name="id" value="{{ $course['id'] }}">
                                                                     <button data-modal-hide="popup-modal-delete-{{ $course['id'] }}" type="submit"
                                                                         class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                                                                        iyah
+                                                                        Si
                                                                     </button>
                                                                 </form>
                                                                 <button data-modal-hide="popup-modal-delete-{{ $course['id'] }}" type="button"
                                                                     class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
-                                                                    batal</button>
+                                                                    Cancelar</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -203,7 +203,7 @@
                                 <div
                                     class="relative w-full px-4 max-w-full flex-grow flex-1 flex flex-wrap justify-between">
                                     <div class="font-semibold text-lg text-blueGray-700">
-                                        <h3>Daftar Kursus yang disimpan</h3>
+                                        <h3>Lista de cursos guardados</h3>
                                     </div>
                                 </div>
                             </div>
@@ -224,19 +224,19 @@
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            kategori
+                                            Cursos
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            status
+                                            Estado
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            harga
+                                            Precio
                                         </th>
                                         <th
                                             class="text-center px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            jumlah peserta
+                                            número de participantes
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
@@ -325,7 +325,7 @@
                                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                                 d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                                         </svg>
-                                                        <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">anda yakin ingin menghapus kursus
+                                                        <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">¿Está seguro de que desea eliminar el curso?
                                                             <b>{{ $course['title'] }}</b>
                                                         </h3>
                                                         <form action="{{ route('course.delete') }}" method="POST">
@@ -334,12 +334,12 @@
                                                             <input type="hidden" name="id" value="{{ $course['id'] }}">
                                                             <button data-modal-hide="popup-modal-delete-{{ $course['id'] }}" type="submit"
                                                                 class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                                                                iyah
+                                                                si
                                                             </button>
                                                         </form>
                                                         <button data-modal-hide="popup-modal-delete-{{ $course['id'] }}" type="button"
                                                             class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
-                                                            batal</button>
+                                                            cancelar</button>
                                                     </div>
                                                 </div>
                                             </div>

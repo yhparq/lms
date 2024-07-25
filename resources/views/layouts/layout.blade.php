@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="landingpage/images/logo_dl.png">
+    <link rel="icon" type="image/x-icon" href="landingpage/images/odinwhite.png">
     <style>
         trix-toolbar [data-trix-button-group="file-tools"] {
             display: none;
@@ -17,7 +17,7 @@
     </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>
-        DevLearn
+        LABORATORIO ODIN
     </title>
 </head>
 

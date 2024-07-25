@@ -12,17 +12,17 @@
                 <div>
                     <!-- Card stats -->
                     <div class="flex flex-wrap">
-                        <x-stastitic-card title="jumlah kursus" value="{{ count($data['course']) }}"
+                        <x-stastitic-card title="Cantidad de cursos" value="{{ count($data['course']) }}"
                             icon='fa-solid fa-book' iconBgColor="bg-slate-800" percentage="{{ $data['coursePercentage'][0] }}"
                             arrow="{{ $data['coursePercentage'][1] }}" />
-                        <x-stastitic-card title="jumlah materi" value="{{ $data['lesson_count'] }}"
+                        <x-stastitic-card title="Número de materiales" value="{{ $data['lesson_count'] }}"
                             icon='fa-solid fa-scroll' iconBgColor="bg-slate-800" percentage="{{ $data['lessonPercentage'][0] }}"
                             arrow="{{ $data['lessonPercentage'][1] }}" />
-                        <x-stastitic-card title="jumlah transaksi" value="{{ $data['member_count'] }}"
+                        <x-stastitic-card title="Cantidad de transacciones" value="{{ $data['member_count'] }}"
                             icon='fa-solid fa-users-rectangle' iconBgColor="bg-slate-800"
                             percentage="{{ $data['transactionPercentage'][0] }}"
                             arrow="{{ $data['transactionPercentage'][1] }}" />
-                        <x-stastitic-card title="pemasukan bulan ini" value="Rp{{ $data['income'] }}"
+                        <x-stastitic-card title="Ingresos de este mes" value="Rp{{ $data['income'] }}"
                             icon='fa-solid fa-rupiah-sign' iconBgColor="bg-slate-800"
                             percentage="{{ $data['incomePercentage'][0] }}" arrow="{{ $data['incomePercentage'][1] }}" />
                     </div>
@@ -70,10 +70,10 @@
                                     <div class="relative w-full max-w-full flex-grow flex-1">
                                         <h6
                                             class="text-gray-600 uppercase text-blueGray-100 mb-1 text-xs font-semibold">
-                                            Ringkasan
+                                            Resumen
                                         </h6>
                                         <h2 class="text-xl font-bold ">
-                                            Stastitik pembelian kursus
+                                            Estadísticas de los cursos
                                         </h2>
                                     </div>
                                 </div>
@@ -105,14 +105,14 @@
                                     <div class="flex flex-wrap items-center">
                                         <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                                             <h3 class="font-semibold text-base text-blueGray-700">
-                                                Kursus dengan pembeli terbanyak bulan ini
+                                                Curso con más participantes este mes
                                             </h3>
                                         </div>
                                         <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                             <a href="author/course"
                                                 class="bg-primary text-white active:bg-neutral-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                 type="button">
-                                                lihat semua
+                                                Ver todos
                                             </a>
                                         </div>
                                     </div>
@@ -124,19 +124,19 @@
                                             <tr>
                                                 <th
                                                     class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                    Kursus
+                                                    Cursos
                                                 </th>
                                                 <th
                                                     class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                    kategori
+                                                    Categoria
                                                 </th>
                                                 <th
                                                     class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                    status
+                                                    Estado
                                                 </th>
                                                 <th
                                                     class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                    jumlah anggota
+                                                    Cantidad de participantes
                                                 </th>
                                             </tr>
                                         </thead>
@@ -172,14 +172,14 @@
                                     <div class="flex flex-wrap items-center">
                                         <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                                             <h3 class="font-semibold text-base text-blueGray-700">
-                                                kursus dengan lulusan terbanyak bulan ini
+                                                Curso con más participantes este mes
                                             </h3>
                                         </div>
                                         <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                             <a href="/author/course"
                                                 class="bg-primary text-white active:bg-neutral-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                                 type="button">
-                                                lihat semua
+                                                Ver todos
                                             </a>
                                         </div>
                                     </div>
@@ -191,15 +191,15 @@
                                             <tr>
                                                 <th
                                                     class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                    kursus
+                                                    Cursos
                                                 </th>
                                                 <th
                                                     class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                    kategori
+                                                    Categorias
                                                 </th>
                                                 <th
                                                     class="text-center px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px">
-                                                    jumlah anggota
+                                                    Numero de participantes
                                                 </th>
                                             </tr>
                                         </thead>

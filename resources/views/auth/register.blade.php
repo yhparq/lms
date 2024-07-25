@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DNCC Learning Platform</title>
+    <title>LABORATORIO ODIN</title>
 
     <script src="https://kit.fontawesome.com/c473da0646.js" crossorigin="anonymous"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -42,15 +42,15 @@
 
                 <div class="hidden lg:relative lg:block lg:p-20">
                     <a class="text-white" href="/">
-                        <span class="sr-only">Home</span>
+                        <span class="sr-only">Inio</span>
                         <h2 class="font-bold text-6xl">
-                            DNCC
+                            ODIN
                         </h2>
-                        <h2 class="font-semibold text-4xl pb-3 md:pb-0">Learning Platfrom</h2>
+                        <h2 class="font-semibold text-4xl pb-3 md:pb-0">Desarrollo e Investigacion</h2>
                     </a>
 
                     <p class="mt-4 leading-relaxed text-white/90">
-                        "Unlock Your Potential: Join the Learning Revolution!"
+                        Desbloquea tu potencial: ¡Únete a la revolución del aprendizaje!
                     </p>
                 </div>
             </section>
@@ -61,7 +61,7 @@
                 <div class="max-w-xl lg:max-w-3xl">
                     <div class="relative my-auto block lg:hidden lg:text-center justify-center">
                         <h1 class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                            Daftar Akun DNCC Learn
+                            Registrate y se parte de nosotros
                         </h1>
                     </div>
 
@@ -69,12 +69,12 @@
                         @csrf
                         <div class="col-span-12 sm:col-span-6">
                             <label for="FirstName" class="block text-sm font-medium text-gray-700">
-                                Nama Lengkap
+                                Nombre completo
                             </label>
                             <input type="text" id="name" name="name"
                                 class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
                             <p class="text-sm text-gray-500 mt-2">
-                                Masukkan nama lengkap Anda
+                                Ingrese su nombre completo
                             </p>
                             @error('name')
                                 <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
@@ -83,14 +83,14 @@
 
                         <div class="col-span-12 sm:col-span-6">
                             <label for="Email" class="block text-sm font-medium text-gray-700">
-                                Email
+                                Correo Electronico
                             </label>
 
                             <input type="email" id="Email" name="email"
                                 class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
 
                             <p class="text-sm text-gray-500 mt-2">
-                                Masukkan email Anda
+                                Ingrese su correo electrónico
                             </p>
                             @error('email')
                                 <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
@@ -99,7 +99,7 @@
 
                         <div class="md:col-span-3 col-span-12">
                             <label for="Password" class="block text-sm font-medium text-gray-700">
-                                Password
+                                Contraseña
                             </label>
 
                             <input type="password" id="Password" name="password"
@@ -111,7 +111,7 @@
 
                         <div class="md:col-span-3 col-span-12">
                             <label for="PasswordConfirmation" class="block text-sm font-medium text-gray-700">
-                                Konfirmasi Password
+                                Confirmar contraseña
                             </label>
 
                             <input type="password" id="PasswordConfirmation" name="password_confirmation"
@@ -123,21 +123,21 @@
 
                         <div class="col-span-12 sm:col-span-6">
                             <p class="text-sm text-gray-500">
-                                Dengan melakukan pendaftaran, Anda setuju dengan
+                                Al registrarte, aceptas los
                                 <a href="#" class="text-gray-700 underline">
-                                    syarat & ketentuan DNCC Learn.
+                                    términos y condiciones del Laboratorio Odin.
                                 </a>
                             </p>
                         </div>
                         <div class="col-span-12 sm:col-span-6 ">
                             <button type="submit"
                                 class="mx-auto inline-block shrink-0 rounded-md bg-slate-800 hover:bg-slate-700 px-12 py-3 text-sm font-medium text-white w-full">
-                                Daftar
+                                Registrarme
                             </button>
                             <div class="sm:flex sm:items-center sm:gap-4">
                                 <p class="mt-4 text-sm text-gray-500 sm:mt-0">
-                                    Sudah punya akun?
-                                    <a href="{{ route('login') }}" class="text-gray-700 underline">Masuk</a>.
+                                    ¿Ya tienes una cuenta?
+                                    <a href="{{ route('login') }}" class="text-gray-700 underline">Ingresa</a>.
                             </div>
                             </p>
                         </div>

@@ -17,12 +17,12 @@
                         <div class="flex flex-wrap items-center py-3">
                             <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                                 <h3 class="font-semibold text-base text-blueGray-700">
-                                    Roles Tables
+                                    Tabla de roles
                                 </h3>
                             </div>
                             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                 <a href="{{ route('roles.create') }}"
-                                    class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">Create
+                                    class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">Crear
                                     Roles</a>
                             </div>
                         </div>
@@ -32,12 +32,12 @@
                                     <tr>
                                         <th scope="col"
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Name
+                                            Nombre
                                         </th>
 
                                         <th scope="col"
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Actions
+                                            Acciones
                                         </th>
 
 
@@ -54,14 +54,14 @@
                                             <td scope="row"
                                                 class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                                 <a class="bg-green-500 text-white active:bg-green-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                                    href="{{ route('roles.edit', $role->id) }}">Edit</a>
+                                                    href="{{ route('roles.edit', $role->id) }}">Editar</a>
                                                 <form class=" inline" action="{{ route('roles.destroy', $role->id) }}"
                                                     method="POST" onsubmit="return confirm('Are you sure??')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button
                                                         class="bg-red-500 text-white active:bg-red-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                                        type="submit">Delete</button>
+                                                        type="submit">Eliminar</button>
                                                 </form>
 
                                             </td>
@@ -80,13 +80,12 @@
                         <div class="flex flex-wrap items-center py-3">
                             <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                                 <h3 class="font-semibold text-base text-blueGray-700">
-                                    Permissions Tables
+                                    Tabla de permisos
                                 </h3>
                             </div>
                             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                 <a href="{{ route('permissions.create') }}"
-                                    class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">Create
-                                    Permission</a>
+                                    class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">Crear permisos</a>
                             </div>
                         </div>
                         <div class="block w-full overflow-x-auto">
@@ -95,12 +94,12 @@
                                     <tr>
                                         <th scope="col"
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Name
+                                            Nombre
                                         </th>
 
                                         <th scope="col"
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Actions
+                                            Acciones
                                         </th>
 
 
@@ -117,7 +116,7 @@
                                             <td scope="row"
                                                 class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                                 <a class="bg-green-500 text-white active:bg-green-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                                    href="{{ route('permissions.edit', $permission->id) }}">Edit</a>
+                                                    href="{{ route('permissions.edit', $permission->id) }}">Editar</a>
 
                                                 <form class=" inline"
                                                     action="{{ route('permissions.destroy', $permission->id) }}"
@@ -126,7 +125,7 @@
                                                     @method('DELETE')
                                                     <button
                                                         class="bg-red-500 text-white active:bg-red-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                                        type="submit">Delete</button>
+                                                        type="submit">Eliminar</button>
                                                 </form>
 
                                             </td>

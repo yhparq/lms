@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DNCC Learning Platform</title>
+    <title>LABORATORIO ODIN</title>
 
     <script src="https://kit.fontawesome.com/c473da0646.js" crossorigin="anonymous"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('landingpage/images/logo_dl.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('landingpage/images/odinwhite.png') }}">
 </head>
 
 <body class="font-poppins text-zinc-800 overflow-x-hidden dark:bg-[#1b1b36] bg-zinc-50" id="top">
@@ -54,7 +54,7 @@
                     </div>
                     <!-- kategori -->
                     <div class="relative hidden ml-10 md:block group dark:text-white">
-                        <a href="#categories">Kategori</a>
+                        <a href="#categories">Categorias</a>
                         <div class="hidden absolute group-hover:block min-w-[200px] pt-8">
                             <ul class="overflow-hidden list-none rounded-lg ">
                                 @foreach ($categories as $category)
@@ -71,7 +71,7 @@
 
                     <!-- langganan -->
                     <div class="relative hidden ml-10 md:block group dark:text-white">
-                        <a href="#mentor">Mentor</a>
+                        <a href="#mentor">Mentores</a>
                     </div>
 
                 </div>
@@ -150,7 +150,7 @@
                                                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
                                                         </path>
                                                     </svg>
-                                                    Keluar
+                                                    Salir
                                                 </button>
                                             </li>
                                         </ul>
@@ -195,7 +195,7 @@
                                                         d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
                                                     </path>
                                                 </svg>
-                                                Keluar
+                                                Salir
                                             </button>
                                         </li>
                                     </ul>
@@ -208,7 +208,7 @@
                         <div class="relative hidden md:block ">
                             <a href="{{ route('login') }}"
                                 class="inline-flex items-center w-full px-6 py-3 ml-2 text-sm font-medium text-black align-middle rounded-full select-none bg-zinc-200 dark:bg-zinc-100 border-slate-800 sm:mb-0 sm:w-auto hover:bg-zinc-300 dark:hover:bg-zinc-200 ">
-                                Masuk
+                                Ingresar
                             </a>
                         </div>
 
@@ -217,7 +217,7 @@
                         <div class="relative hidden mr-2 md:block">
                             <a href="{{ route('register') }}"
                                 class="inline-flex items-center w-full px-6 py-3 ml-2 text-sm font-medium text-white align-middle bg-blue-600 rounded-full select-none sm:mb-0 sm:w-auto hover:opacity-95">
-                                Daftar
+                                Registrate
                             </a>
                         </div>
                     @endif
@@ -279,7 +279,7 @@
                     <li class="py-3">
                         <div class="flex items-center justify-between w-full" onclick="dropDown()">
                             <span
-                                class="text-[15px] ml-2 text-slate-800 font-semibold dark:text-white ">Kategori</span>
+                                class="text-[15px] ml-2 text-slate-800 font-semibold dark:text-white ">Categorias</span>
                             <span class="text-sm rotate-180" id="arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 dark:hidden">
@@ -313,7 +313,7 @@
                     </li>
                     <li class="py-3">
                         <div class="flex items-center justify-between w-full">
-                            <span class="text-[15px] ml-2 text-slate-800 font-semibold dark:text-white">Mentor</span>
+                            <span class="text-[15px] ml-2 text-slate-800 font-semibold dark:text-white">Mentores</span>
                             <span class="text-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-3 h-3 dark:hidden">
@@ -338,7 +338,7 @@
                         <div class="relative ">
                             <a href="{{ route('login') }}"
                                 class="inline-flex items-center w-full px-6 py-3 ml-2 text-sm font-medium text-black align-middle rounded-full select-none bg-zinc-200 dark:bg-zinc-100 border-slate-800 sm:mb-0 sm:w-auto hover:bg-zinc-300 dark:hover:bg-zinc-200 ">
-                                Masuk
+                                Ingresar
                             </a>
                         </div>
 
@@ -347,7 +347,7 @@
                         <div class="relative">
                             <a href="{{ route('register') }}"
                                 class="inline-flex items-center w-full px-6 py-3 ml-2 text-sm font-medium text-white align-middle bg-blue-600 rounded-full select-none sm:mb-0 sm:w-auto hover:opacity-95">
-                                Daftar
+                                Registrate
                             </a>
                         </div>
                     </div>
@@ -365,18 +365,17 @@
         <div class="container py-16 mx-auto space-y-8 lg:space-y-16">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
                 <div>
-                    <div class="h-12">
-                        <img src="{{ asset('landingpage/images/logoDL.png') }}" class="w-28 dark:hidden"
+                    <div class="h-12 mb-5">
+                        <img src="{{ asset('landingpage/images/odindark.png') }}" class="w-28 dark:hidden"
                             alt="" />
-                        <img src="{{ asset('landingpage/images/logoDL-dark.png') }}"
+                        <img src="{{ asset('landingpage/images/odinwhite.png') }}"
                             class="hidden w-28 h-15 dark:flex" alt="" />
                     </div>
                     <p class="max-w-xs pt-3 mt-8 text-sm text-slate-500 dark:text-white">
-                        <b>Basecamp DNCC</b>
+{{--                        <b>LABORATORIO ODIN</b>--}}
                         <br>
-                        Jl. Nakula 1 No.5-11, Pendrikan Kidul,
-                        Kec. Semarang Tengah, Kota Semarang,
-                        Jawa Tengah 50131
+                        DIRECCIÓN: AVENIDA FLORAL 1153 – PUNO
+                        DIRECCIÓN: AVENIDA EL SOL 329 – BARRIO BELLAVISTA – PUNO
                     </p>
 
                     <ul class="flex gap-6 mt-8">
@@ -425,38 +424,38 @@
                 <div class="grid grid-cols-2 gap-8 lg:col-span-2 md:grid-cols-3">
                     <!-- tentang kami -->
                     <div>
-                        <p class="font-medium text-zinc-900 dark:text-white dark:font-bold">Tentang Kami</p>
+                        <p class="font-medium text-zinc-900 dark:text-white dark:font-bold">Acerca de Nosotros</p>
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
                                 <a href="#" class="transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    Mulai Belajar
+                                    Comienza a aprender
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" class="transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    Lihat Semua Kursus
+                                    Ver tododos los cursos
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" class="transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    Kontak Kami
+                                    Contactenos
                                 </a>
                             </li>
 
                             <li>
-                                <a href="https://dnccudinus.org/"
+                                <a href="#"
                                     class="transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    Website Resmi DNCC
+                                    PaginaWeb FINESI
                                 </a>
                             </li>
 
                             <li>
-                                <a href="https://dinus.ac.id/"
+                                <a href="https://www.portal.unap.edu.pe/"
                                     class="transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    Website Resmi Universitas
+                                    Universidad Nacional del Altiplano
                                 </a>
                             </li>
                         </ul>
@@ -464,7 +463,7 @@
 
                     <!-- kategori -->
                     <div>
-                        <p class="font-medium text-zinc-900 dark:text-white dark:font-bold">Kategori</p>
+                        <p class="font-medium text-zinc-900 dark:text-white dark:font-bold">Categorias</p>
 
                         <ul class="mt-6 space-y-4 text-sm">
                             @foreach ($categories as $category)
@@ -483,11 +482,11 @@
 
                     <!-- developer -->
                     <div>
-                        <p class="font-medium text-zinc-900 dark:text-white dark:font-bold">Tentang Developer</p>
+                        <p class="font-medium text-zinc-900 dark:text-white dark:font-bold">Equipo de Desarolladores</p>
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="https://github.com/ryokf"
+                                <a href="https://github.com/yhparq"
                                     class="flex items-center text-sm transition text-zinc-700 hover:opacity-75 dark:text-white">
                                     <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
                                         aria-hidden="true">
@@ -495,11 +494,11 @@
                                             d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Ryo Khrisna Fitriawan
+                                    Yhon Carlos Pari Q.
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/rmarioapn3"
+                                <a href="https://github.com/MiAAAAW"
                                     class="flex items-center text-sm transition text-zinc-700 hover:opacity-75 dark:text-white">
                                     <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
                                         aria-hidden="true">
@@ -507,33 +506,33 @@
                                             d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Mario Aprilnino Prasetyo
+                                    Hugo Ticona S.
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/taliyameyswara"
-                                    class="flex items-center text-sm transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
-                                        aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Taliya Meyswara
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/isnanramalia"
-                                    class="flex items-center text-sm transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
-                                        aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Isna Nur Amalia
-                                </a>
-                            </li>
+{{--                            <li>--}}
+{{--                                <a href="https://github.com/taliyameyswara"--}}
+{{--                                    class="flex items-center text-sm transition text-zinc-700 hover:opacity-75 dark:text-white">--}}
+{{--                                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"--}}
+{{--                                        aria-hidden="true">--}}
+{{--                                        <path fill-rule="evenodd"--}}
+{{--                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"--}}
+{{--                                            clip-rule="evenodd" />--}}
+{{--                                    </svg>--}}
+{{--                                    Taliya Meyswara--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="https://github.com/isnanramalia"--}}
+{{--                                    class="flex items-center text-sm transition text-zinc-700 hover:opacity-75 dark:text-white">--}}
+{{--                                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"--}}
+{{--                                        aria-hidden="true">--}}
+{{--                                        <path fill-rule="evenodd"--}}
+{{--                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"--}}
+{{--                                            clip-rule="evenodd" />--}}
+{{--                                    </svg>--}}
+{{--                                    Isna Nur Amalia--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
                         </ul>
                     </div>
                 </div>

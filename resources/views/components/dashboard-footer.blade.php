@@ -8,7 +8,7 @@
                     Copyright © <span id="get-current-year"></span>
                     <a href="{{ route('homepage') }}"
                         class="text-blueGray-500 hover:text-blueGray-700 text-sm font-semibold py-1">
-                        DNCC learning platform team
+                        Equipo de desarrolo del Laboratorio ODIN
                     </a>
                 </div>
             </div>
@@ -17,13 +17,13 @@
                     <li>
                         <a href="/"
                             class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">
-                            Home
+                            Inicio
                         </a>
                     </li>
                     <li>
                         <a href="/"
                             class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">
-                            About Us
+                            Acerca de Nosotros
                         </a>
                     </li>
                     <li>
@@ -32,12 +32,12 @@
                             Faq
                         </a>
                     </li>
-                    <li>
-                        <a href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-settings"
-                            class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">
-                            MIT License
-                        </a>
-                    </li>
+{{--                    <li>--}}
+{{--                        <a href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-settings"--}}
+{{--                            class="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3">--}}
+{{--                            MIT License--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                 </ul>
             </div>
         </div>
