@@ -60,14 +60,14 @@
                 <div class="lg:col-span-2">
                     <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-6">
                         <div class="md:col-span-6">
-                            <label for="current_password">Current Password</label>
+                            <label for="current_password">Contraseña actual</label>
                             <input type="password" name="current_password" id="current_password"
                                 class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
                             <x-input-error :messages="$errors->updatePassword->get('current_password')" class="mt-2" />
                         </div>
 
                         <div class="md:col-span-6">
-                            <label for="password">New Password</label>
+                            <label for="password">Nueva Contraseña</label>
                             <input type="password" name="password" id="password"
                                 class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
                             <x-input-error :messages="$errors->updatePassword->get('password')" class="mt-2" />
@@ -75,7 +75,7 @@
 
 
                         <div class="md:col-span-6">
-                            <label for="password_confirmation">Confirm Password</label>
+                            <label for="password_confirmation">Confirma Contraseña</label>
                             <input type="password" name="password_confirmation" id="password_confirmation"
                                 class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
                             <x-input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-2" />
@@ -88,8 +88,7 @@
                                         class="text-sm text-gray-600">{{ __('Saved.') }}</p>
                                 @endif
                                 <button type="submit"
-                                    class="bg-slate-800 hover:bg-slate-950 text-white font-bold py-2 px-4 rounded">Change
-                                    Password</button>
+                                    class="bg-slate-800 hover:bg-slate-950 text-white font-bold py-2 px-4 rounded">Cambiar Contraseña</button>
                             </div>
                         </div>
                     </div>

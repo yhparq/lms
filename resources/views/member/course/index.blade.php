@@ -7,14 +7,14 @@
             class="relative bg-gradient-to-bl from-sky-500 dark:from-indigo-600 via-20% to-blue-700 dark:to-indigo-950 rounded-b-xl shadow-lg  mb-10 py-10">
             {{-- <x-dashboard-header></x-dashboard-header> --}}
             <div class="mt-6 text-white px-auto md:pl-5">
-                <h1 class="container text-4xl font-bold">Kursus Anda</h1>
+                <h1 class="container text-4xl font-bold">Sus cursos</h1>
                 <p class="container mt-2 font-thin">
-                    Upgrade terus ilmu dan pengalaman terbaru kamu di bidang teknologi
+                    Actualiza constantemente tus conocimientos y experiencias más recientes en el campo de la tecnología.
                 </p>
             </div>
             <div class="items-center pt-5  md:pl-5">
                 <form class="container flex items-center max-w-2xl" action="" method="GET">
-                    <label for="simple-search" class="sr-only">Search</label>
+                    <label for="simple-search" class="sr-only">Buscar</label>
                     <div class="relative w-full">
                         <input type="text" id="simple-search"
                             class="bg-white placeholder-white bg-opacity-40 border-none text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-2 pr-20 p-2.5  "
@@ -27,35 +27,34 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                         </svg>
-                        <span class="sr-only">Search</span>
+                        <span class="sr-only">Buscar</span>
                     </button>
                 </form>
                 <div class="container flex items-center gap-3 mt-3 overflow-x-auto md:overflow-hidden">
                     <x-dropdown-button :sorts="$sorts" buttonColor="bg-white bg-opacity-40"
-                        textColor="text-white">urutkan</x-dropdown-button>
+                        textColor="text-white">Ordenar</x-dropdown-button>
                     {{-- <x-dropdown-button :sorts="$categories" buttonColor="bg-white"
                         textColor="text-black">kategori</x-dropdown-button> --}}
                     <a href="?status=pass"
                         class="{{ request()->status == 'pass' ? 'bg-blue-400 text-white' : 'bg-white bg-opacity-40 text-white' }} focus:ring-4 focus:outline-none focus:ring-neutral-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
-                        type="button"> diselesaikan
+                        type="button"> Completado
                     </a>
                     <a href="?status=ongoing"
                         class="{{ request()->status == 'ongoing' ? 'bg-blue-400 text-white' : 'bg-white bg-opacity-40 text-white' }} focus:ring-4 focus:outline-none focus:ring-neutral-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
-                        type="button"> berjalan
+                        type="button"> En progreso
                     </a>
                 </div>
             </div>
         </div>
         <div class="px-10 mx-auto">
             @if (request()->search != null && count($courses) == 0)
-                <h1 class="mx-auto text-xl font-semibold text-center">kursus yang anda cari tidak tersedia</h1>
+                <h1 class="mx-auto text-xl font-semibold text-center">El curso que busca no está disponible</h1>
                 <a title="kembali ke daftar kursus" class="block mt-4 text-center" href="{{ route('course.index') }}"><i
                         class="fa-solid fa-arrow-left fa-xl"></i></a>
             @endif
             @if (request()->search == null && count($courses) == 0)
-                <h1 class="mx-auto text-xl font-semibold text-center">anda belum memiliki kursus</h1>
-                <a class="block mt-2 text-lg text-center text-blue-600" href="{{ route('homepage') }}#categories">beli
-                    kursus</a>
+                <h1 class="mx-auto text-xl font-semibold text-center">Aún no tienes ningún curso</h1>
+                <a class="block mt-2 text-lg text-center text-blue-600" href="{{ route('homepage') }}#categories">Adquirir curso</a>
             @endif
             <div class="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach ($courses as $course)

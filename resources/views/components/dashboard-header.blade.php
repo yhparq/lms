@@ -31,10 +31,10 @@
                     </span>
                     <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
                     <a href="/profile"
-                        class="text-sm text-center px-4 py-2 font-normal block w-full whitespace-nowrap bg-transparent hover:bg-gray-100">profile
+                        class="text-sm text-center px-4 py-2 font-normal block w-full whitespace-nowrap bg-transparent hover:bg-gray-100">perfil
                     </a>
                     <span data-modal-target="popup-modal-logout" data-modal-toggle="popup-modal-logout"
-                        class="cursor-pointer text-center text-red-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700 hover:bg-red-100">logout
+                        class="cursor-pointer text-center text-red-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700 hover:bg-red-100">salir
                     </span>
                 </div>
             </ul>
@@ -63,17 +63,17 @@
             </button>
             <div class="p-6 text-center">
 
-                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">anda yakin ingin melakukan logout?
+                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">¿Está seguro de que desea cerrar sesión?
                 </h3>
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
                     <button type="submit" data-modal-hide="popup-modal-logout" type="button"
                         class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                        iyah
+                        si
                     </button>
                     <button data-modal-hide="popup-modal-logout" type="button"
                         class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
-                        batal</button>
+                        cancelar</button>
                 </form>
             </div>
         </div>

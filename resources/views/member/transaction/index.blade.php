@@ -8,10 +8,9 @@
         <div
             class="relative bg-gradient-to-bl from-sky-500 dark:from-indigo-600 via-20% to-blue-700 dark:to-indigo-950  md:pt-10 pb-40 pt-12 ">
             <div class="text-white mt-6 px-auto md:pl-5">
-                <h1 class="container text-4xl font-bold">Transaksi Anda</h1>
+                <h1 class="container text-4xl font-bold">Sus transacciones</h1>
                 <p class="container mt-2 font-thin">
-                    Daftar pembelian kelas Anda
-                    untuk karir masa depan yang cerah
+                    Lista de compras de cursos para un futuro profesional brillante
                 </p>
             </div>
         </div>
@@ -25,12 +24,12 @@
                                 <div
                                     class="relative w-full px-4 max-w-full flex-grow flex-1 flex flex-wrap justify-between">
                                     <div class="font-semibold text-lg text-blueGray-700">
-                                        <h3>Daftar Transaksi</h3>
+                                        <h3>Lista de transacciones</h3>
                                     </div>
                                 </div>
                                 <div class="flex">
                                     <x-dropdown-button :sorts="$sorts" buttonColor="bg-blue-500 dark:bg-indigo-600" textColor="text-white">
-                                        urutkan </x-dropdown-button>
+                                        Ordenar </x-dropdown-button>
                                 </div>
                             </div>
                         </div>
@@ -41,24 +40,24 @@
                                     <tr>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            No.
+                                            No
                                         </th>
 
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Judul kursus
+                                            Título del curso
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Harga kursus
+                                            Precio del curso
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            Tanggal pembelian
+                                            Fecha de compra
                                         </th>
                                         <th
                                             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                                            status
+                                            Estado
                                         </th>
                                     </tr>
                                 </thead>

@@ -17,12 +17,11 @@
                                     <div class="flex-auto ">
                                         <div class="flex flex-wrap p-4">
                                             <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                                <h5 class="text-blueGray-400 uppercase font-semibold text-xs">
-                                                    lanjutkan belajar
+                                                <h5 class="text-blueGray-400 uppercase font-semibold text-xs">Sigue estudiando
                                                 </h5>
                                                 <span class="font-thin mt-1 block text-blueGray-700">
                                                     @if ($data['lastStudy'] == null)
-                                                        <span class="font-medium">anda belum memiliki kursus</span>
+                                                        <span class="font-medium">Aún no tienes cursos</span>
                                                     @else
                                                         <span
                                                             class="font-semibold">{{ $data['lastStudy'][0]->title }}</span>
@@ -41,11 +40,11 @@
                                         </div>
                                         <div class="py-2 px-4 bg-white rounded-b-xl bg-opacity-50 backdrop-blur-lg text-sm">
                                             @if ($data['lastStudy'] == null)
-                                                <a href="{{ route('homepage') . '#categories' }}" class="block ">beli kelas
+                                                <a href="{{ route('homepage') . '#categories' }}" class="block ">Compra un curso
                                                     <i class="fa-solid fa-arrow-right"></i></a>
                                             @else
                                                 <a href="{{ route('lesson.show', ['chapter' => $data['lastStudy'][1]->chapter, 'id' => $data['lastStudy'][0]->id]) }}"
-                                                    class="block ">lanjutkan <i class="fa-solid fa-arrow-right"></i></a>
+                                                    class="block ">Continuar <i class="fa-solid fa-arrow-right"></i></a>
                                             @endif
                                         </div>
                                     </div>
@@ -75,9 +74,8 @@
                         class="w-full min-h-fit bg-white rounded-xl shadow hover:shadow-lg transition dark:bg-[#303150] p-4 md:p-6 md:py-4 relative">
                         <div class="flex justify-between">
                             <div class="mb-1">
-                                <p class="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">Ringkasan</p>
-                                <h5 class="leading-none text-xl font-bold dark:text-white pb-2">Peforma
-                                    belajar anda</h5>
+                                <p class="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">Resumen</p>
+                                <h5 class="leading-none text-xl font-bold dark:text-white pb-2">El rendimiento de tu aprendizaje</h5>
                             </div>
                             <div
                                 class="flex items-center px-2.5 py-0.5 text-base font-semibold text-green-500 dark:text-green-500 text-center">
@@ -95,7 +93,7 @@
                             <div class="flex justify-end items-center pt-4">
                                 <a href="#"
                                     class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500  hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2">
-                                    Daftar transaksi
+                                    Lista de transacciones
                                     <svg class="w-2.5 h-2.5 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 6 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -112,8 +110,8 @@
                         class="relative w-full bg-white rounded-lg shadow hover:shadow-lg transition dark:dark:bg-[#303150] p-4 md:p-6 md:py-4">
                         <div class="flex justify-between ">
                             <div class="">
-                                <p class="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">Ringkasan</p>
-                                <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white pb-2">Keahlian anda
+                                <p class="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">Resumen</p>
+                                <h5 class="leading-none text-xl font-bold text-gray-900 dark:text-white pb-2">Sus habilidades
                                 </h5>
                             </div>
 
@@ -129,14 +127,14 @@
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full px-4 flex-grow flex-1">
                                     <h3 class="font-medium">
-                                        Kursus yang anda beli bulan ini
+                                        Cursos que siguio este mes
                                     </h3>
                                 </div>
                                 <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                     <a href="author/course"
                                         class="text-center bg-blue-500 text-white active:bg-blue-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                         type="button">
-                                        lihat semua
+                                        ver todos
                                     </a>
                                 </div>
                             </div>
@@ -148,19 +146,19 @@
                                     <tr>
                                         <th
                                             class="px-6 text-zinc-500 dark:text-zinc-400 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-medium text-left">
-                                            Kursus
+                                            Cursos
                                         </th>
                                         <th
                                             class="px-6 text-zinc-500 dark:text-zinc-400 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-medium text-left">
-                                            kategori
+                                            Categorias
                                         </th>
                                         <th
                                             class="px-6 text-zinc-500 dark:text-zinc-400 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-medium text-left">
-                                            status
+                                            Estado
                                         </th>
                                         <th
                                             class="px-6 text-zinc-500 dark:text-zinc-400 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-medium text-left">
-                                            tanggal pembelian
+                                            Fecha de Inicio
                                         </th>
                                     </tr>
                                 </thead>
@@ -196,14 +194,14 @@
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full px-4 flex-grow flex-1">
                                     <h3 class="font-medium">
-                                        Kursus diselesaikan bulan ini
+                                        Cursos completados este mes
                                     </h3>
                                 </div>
                                 <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                     <a href="author/course"
                                         class="text-center bg-blue-500 text-white active:bg-blue-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                         type="button">
-                                        lihat semua
+                                        ver todo
                                     </a>
                                 </div>
                             </div>
@@ -215,15 +213,15 @@
                                     <tr>
                                         <th
                                             class="px-6  text-zinc-500 dark:text-zinc-400 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                            kursus
+                                            Cursos
                                         </th>
                                         <th
                                             class="px-6  text-zinc-500 dark:text-zinc-400 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                            kategori
+                                            Categorias
                                         </th>
                                         <th
                                             class="text-center px-6  text-zinc-500 dark:text-zinc-400 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px">
-                                            tanggal kursus diselesaikan
+                                            fecha de finalización del curso
                                         </th>
                                     </tr>
                                 </thead>
@@ -268,11 +266,11 @@
                     <path
                         d="M14.419 10.581a3.564 3.564 0 0 0-2.574 1.1l-4.756-2.49a3.54 3.54 0 0 0 .072-.71 3.55 3.55 0 0 0-.043-.428L11.67 6.1a3.56 3.56 0 1 0-.831-2.265c.006.143.02.286.043.428L6.33 6.218a3.573 3.573 0 1 0-.175 4.743l4.756 2.491a3.58 3.58 0 1 0 3.508-2.871Z" />
                 </svg>
-                <span class="sr-only">Share</span>
+                <span class="sr-only">Compartir</span>
             </button>
             <div id="tooltip-share" role="tooltip"
                 class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                Share
+                Compartir
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
             <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="left"
@@ -283,11 +281,11 @@
                     <path
                         d="M18 7H2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2v-3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm-1-2V2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3h14Z" />
                 </svg>
-                <span class="sr-only">Print</span>
+                <span class="sr-only">Imprimir</span>
             </button>
             <div id="tooltip-print" role="tooltip"
                 class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                Print
+                Imprimir
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
             <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left"
@@ -299,11 +297,11 @@
                     <path
                         d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
                 </svg>
-                <span class="sr-only">Download</span>
+                <span class="sr-only">Descargar</span>
             </button>
             <div id="tooltip-download" role="tooltip"
                 class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                Download
+                Descargar
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
             <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="left"
@@ -315,11 +313,11 @@
                     <path
                         d="M11.066 4H7v5a2 2 0 0 1-2 2H0v7a1.969 1.969 0 0 0 1.933 2h9.133A1.97 1.97 0 0 0 13 18V6a1.97 1.97 0 0 0-1.934-2Z" />
                 </svg>
-                <span class="sr-only">Copy</span>
+                <span class="sr-only">Copiar</span>
             </button>
             <div id="tooltip-copy" role="tooltip"
                 class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                Copy
+                Copiar
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
         </div>
@@ -331,7 +329,7 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9 1v16M1 9h16" />
             </svg>
-            <span class="sr-only">Open actions menu</span>
+            <span class="sr-only">Abrir menú de acciones</span>
         </button>
     </div>
 

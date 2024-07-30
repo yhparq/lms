@@ -12,10 +12,10 @@
                 <div class="p-5">
                     <div class="mt-6 p-2">
                         <div>
-                            <p>Username : {{ $user->username }}</p>
+                            <p>Nombre de usuario : {{ $user->username }}</p>
                         </div>
                         <div>
-                            <p>Email : {{ $user->email }}</p>
+                            <p>Correo electronico : {{ $user->email }}</p>
                         </div>
                     </div>
                     <div class="mt-6 p-2">

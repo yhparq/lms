@@ -5,7 +5,7 @@
             <div class="pt-8">
                 <p class="mb-1 text-lg font-semibold text-blue-500">#EasyLearnWithUs</p>
                 @foreach ($courses as $course)
-                    <p class="mb-2 text-2xl dark:text-white">Kelas {{ $course->category->name }} </p>
+                    <p class="mb-2 text-2xl dark:text-white">clase {{ $course->category->name }} </p>
                     <p class="text-base dark:text-zinc-400">{{ $course->category->description }}</p>
                     @php
                         break;
@@ -13,7 +13,7 @@
                 @endforeach
             </div>
             <div class="py-8">
-                <p class="py-8 text-xl font-semibold dark:text-white">Kelas Terpopuler saat ini</p>
+                <p class="py-8 text-xl font-semibold dark:text-white">Clases más populares en este momento</p>
                 <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     @foreach ($coursesPopuler as $course)
                         <x-course-card :id="$course->id" :title="$course->title" :category="$course->category->name" :price="$course->price"
@@ -23,7 +23,7 @@
             </div>
             <div class="py-8">
                 @foreach ($courses as $course)
-                    <p class="py-8 text-xl font-semibold dark:text-white">Semua Kelas {{ $course->category->name }}</p>
+                    <p class="py-8 text-xl font-semibold dark:text-white">Todas las Clases {{ $course->category->name }}</p>
                     @php
                         break;
                     @endphp

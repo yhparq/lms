@@ -17,7 +17,7 @@
                                 <div class="relative w-full px-4 max-w-full flex-grow flex-1 flex flex-wrap justify-between">
                                     <div class="font-semibold text-lg text-blueGray-700">
                                         <form class="flex items-center" action="{{ route('course.index') }}" method="get">
-                                            <label for="simple-search" class="sr-only">Search</label>
+                                            <label for="simple-search" class="sr-only">Buscar</label>
                                             <div class="relative w-full">
 
                                                 <input type="text" id="simple-search" name="search"

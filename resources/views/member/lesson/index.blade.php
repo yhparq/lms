@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>
-        DevLearn
+        LABORATORIO ODIN
     </title>
 </head>
 
@@ -94,7 +94,7 @@
                                                             stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
                                                         </path>
                                                     </svg>
-                                                    Pengaturan
+                                                    Configuración
                                                 </a>
                                             </li>
                                             <li>
@@ -110,7 +110,7 @@
                                                                 d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
                                                             </path>
                                                         </svg>
-                                                        Keluar
+                                                        Salir
                                                     </button>
                                                 </form>
                                             </li>
@@ -153,7 +153,7 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                                 </svg>
-                                                Pengaturan
+                                                Configuración
                                             </a>
                                         </li>
                                         <li>
@@ -169,7 +169,7 @@
                                                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
                                                         </path>
                                                     </svg>
-                                                    Keluar
+                                                Salir
                                                 </button>
                                             </form>
                                         </li>
@@ -186,7 +186,7 @@
                             <div class="relative hidden md:block">
                                 <a href="{{ route('login') }}"
                                     class="inline-flex items-center w-full px-6 py-2 ml-2 text-base font-semibold align-middle bg-white border rounded-full select-none text-slate-800 border-slate-800 sm:mb-0 sm:w-auto hover:bg-slate-800 hover:text-white focus-within:bg-slate-800 focus-within:border-slate-800">
-                                    Masuk
+                                    Iniciar sesión
                                 </a>
                             </div>
 
@@ -195,7 +195,7 @@
                             <div class="relative hidden md:block">
                                 <a href="{{ route('register') }}"
                                     class="inline-flex items-center w-full px-6 py-2 ml-2 text-base font-semibold text-white align-middle border rounded-full select-none bg-slate-800 sm:mb-0 sm:w-auto hover:opacity-95">
-                                    Daftar
+                                    Registrarse
                                 </a>
                             </div>
                     @endif
@@ -312,7 +312,7 @@
                         </form>
                     @endif
                     @if ($lastChapter)
-                        Sudah Selesai
+                            Ya está terminado
                     @endif
                 </div>
             @endforeach
@@ -321,14 +321,12 @@
             <hr>
             <div class="container mt-5">
                 <div class="mb-10 ">
-                    <h1 class="text-xl font-bold">Forum pembahasan</h1>
-                    <p class="text-gray-400">bergabung bersama yang lain dalam membahas maetri tersebut, pertanyaan
-                        yang
-                        anda tanyakan akan segera mentor balas</p>
+                    <h1 class="text-xl font-bold">Foro de discusión</h1>
+                    <p class="text-gray-400">Únase a otros para discutir el material; las preguntas que haga serán respondidas por el mentor de inmediato</p>
                 </div>
                 {{-- @dd($comments) --}}
                 @if (count($comments) == 0)
-                    <h1 class="my-10 text-xl font-semibold text-center">belum ada diskusi pada materi ini</h1>
+                    <h1 class="my-10 text-xl font-semibold text-center">Aún no hay discusiones sobre este material</h1>
                 @else
                     @foreach ($comments as $comment)
                         {{-- <x-comment-section :name="$comment->user->name", :photo="$comment->user->photo", :comment="$comment->comment" :userId="$comment->user->id" /> --}}
@@ -350,11 +348,11 @@
 
 
 
-                            <label for="simple-search" class="sr-only">Search</label>
+                            <label for="simple-search" class="sr-only">Buscar</label>
                             <div class="relative w-full -mb-3">
                                 <div
                                     class="flex items-center justify-between px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded max-w-max dark:bg-gray-700 dark:text-gray-300">
-                                    membalas komentar {{ '@' . request()->get('name') }}
+                                    Responder comentarios {{ '@' . request()->get('name') }}
                                     <a href="{{ route('lesson.show', ['id' => $course->id, 'chapter' => $lesson_detail['0']->chapter]) . '#comment-form' }}"
                                         class="inline-flex items-center p-1 ml-2 text-sm text-gray-400 bg-transparent rounded-sm hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-gray-300">
                                         <i class="fa-solid fa-xmark"></i>
@@ -368,12 +366,12 @@
                             <button type="submit"
                                 class="p-2.5 ml-2 -mb-3 text-sm font-medium text-white bg-slate-700 rounded-lg border border-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
                                 <i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i>
-                                <span class="sr-only">Search</span>
+                                <span class="sr-only">Buscar</span>
                             </button>
                         @else
                             <input type="hidden" name="lesson_id" value="{{ $id_lesson->id }}">
 
-                            <label for="simple-search" class="sr-only">Search</label>
+                            <label for="simple-search" class="sr-only">Buscar</label>
                             <div class="relative w-full">
                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                     <i class="fa-regular fa-message"></i>
@@ -386,7 +384,7 @@
                             <button type="submit"
                                 class="p-2.5 ml-2 text-sm font-medium text-white bg-slate-700 rounded-lg border border-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
                                 <i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i>
-                                <span class="sr-only">Search</span>
+                                <span class="sr-only">Buscar</span>
                             </button>
                         @endif
 
@@ -402,15 +400,14 @@
                     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
                         <div>
                             <div class="h-8">
-                                <img src="{{ asset('landingpage/images/logo-dncc.webp') }}" class="h-10 w-25"
+                                <img src="{{ asset('landingpage/images/odinwhite.png') }}" class="h-10 w-25"
                                     alt="" />
                             </div>
                             <p class="max-w-xs pt-3 mt-4 text-sm text-slate-500">
-                                <b>Basecamp DNCC</b>
+{{--                                <b>LABORATORIO ODIN</b>--}}
                                 <br>
-                                Jl. Nakula 1 No.5-11, Pendrikan Kidul,
-                                Kec. Semarang Tengah, Kota Semarang,
-                                Jawa Tengah 50131
+                                DIRECCIÓN: AVENIDA FLORAL 1153 – PUNO
+                                DIRECCIÓN: AVENIDA EL SOL 329 – BARRIO BELLAVISTA – PUNO
                             </p>
 
                             <ul class="flex gap-6 mt-8">
@@ -462,38 +459,38 @@
                         <div class="grid grid-cols-2 gap-8 lg:col-span-2 md:grid-cols-3">
                             <!-- tentang kami -->
                             <div>
-                                <p class="font-medium text-gray-900">Tentang Kami</p>
+                                <p class="font-medium text-gray-900">Acerca de nosotros</p>
 
                                 <ul class="mt-6 space-y-4 text-sm">
                                     <li>
                                         <a href="#" class="text-gray-700 transition hover:opacity-75">
-                                            Mulai Belajar
+                                            Comienza a aprender
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#" class="text-gray-700 transition hover:opacity-75">
-                                            Lihat Semua Kursus
+                                            Ver todos los cursos
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#" class="text-gray-700 transition hover:opacity-75">
-                                            Kontak Kami
+                                            Contactenos
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="https://dnccudinus.org/"
                                             class="text-gray-700 transition hover:opacity-75">
-                                            Website Resmi DNCC
+                                            PaginaWeb FINESI
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="https://dinus.ac.id/"
                                             class="text-gray-700 transition hover:opacity-75">
-                                            Website Resmi Universitas
+                                            Universidad Nacional del Altiplano
                                         </a>
                                     </li>
                                 </ul>
@@ -501,7 +498,7 @@
 
                             <!-- kategori -->
                             <div>
-                                <p class="font-medium text-gray-900">Kategori</p>
+                                <p class="font-medium text-gray-900">Categorias</p>
 
                                 <ul class="mt-6 space-y-4 text-sm">
                                     @foreach ($categories as $category)
@@ -517,11 +514,11 @@
 
                             <!-- developer -->
                             <div>
-                                <p class="font-medium text-gray-900">Tentang Developer</p>
+                                <p class="font-medium text-gray-900">Equipo de Desarolladores</p>
 
                                 <ul class="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="https://github.com/ryokf"
+                                        <a href="https://github.com/yhparq"
                                             class="flex items-center text-sm text-gray-700 transition hover:opacity-75">
                                             <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
                                                 aria-hidden="true">
@@ -529,11 +526,11 @@
                                                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                                     clip-rule="evenodd" />
                                             </svg>
-                                            Ryo Khrisna Fitriawan
+                                            Yhon Carlos Pari Q.
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/rmarioapn3"
+                                        <a href="https://github.com/MiAAAAW"
                                             class="flex items-center text-sm text-gray-700 transition hover:opacity-75">
                                             <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
                                                 aria-hidden="true">
@@ -541,40 +538,40 @@
                                                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                                     clip-rule="evenodd" />
                                             </svg>
-                                            Mario Aprilnino Prasetyo
+                                            Hugo Ticona S.
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="https://github.com/taliyameyswara"
-                                            class="flex items-center text-sm text-gray-700 transition hover:opacity-75">
-                                            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
-                                                aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                            Taliya Meyswara
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/isnanramalia"
-                                            class="flex items-center text-sm text-gray-700 transition hover:opacity-75">
-                                            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"
-                                                aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                            Isna Nur Amalia
-                                        </a>
-                                    </li>
+{{--                                    <li>--}}
+{{--                                        <a href="https://github.com/taliyameyswara"--}}
+{{--                                            class="flex items-center text-sm text-gray-700 transition hover:opacity-75">--}}
+{{--                                            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"--}}
+{{--                                                aria-hidden="true">--}}
+{{--                                                <path fill-rule="evenodd"--}}
+{{--                                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"--}}
+{{--                                                    clip-rule="evenodd" />--}}
+{{--                                            </svg>--}}
+{{--                                            Taliya Meyswara--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="https://github.com/isnanramalia"--}}
+{{--                                            class="flex items-center text-sm text-gray-700 transition hover:opacity-75">--}}
+{{--                                            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"--}}
+{{--                                                aria-hidden="true">--}}
+{{--                                                <path fill-rule="evenodd"--}}
+{{--                                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"--}}
+{{--                                                    clip-rule="evenodd" />--}}
+{{--                                            </svg>--}}
+{{--                                            Isna Nur Amalia--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </div>
                         </div>
                     </div>
 
                     <p class="text-xs text-center text-gray-500">
-                        &copy; 2023. DNCC. All rights reserved.
+                        &copy; 2023. Laboratorio Odin. Todos los derechos reservados
                     </p>
                 </div>
             </footer>

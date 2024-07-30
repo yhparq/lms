@@ -9,15 +9,15 @@
 
                     <div class="hidden lg:relative lg:block lg:p-20">
                         <a class="text-white" href="/">
-                            <span class="sr-only">Home</span>
+                            <span class="sr-only">Inicio</span>
                             <h2 class="font-bold text-6xl">
-                                DNCC
+                                LABORATORIO
                             </h2>
-                            <h2 class="font-semibold text-4xl pb-3 md:pb-0">Learning Platfrom</h2>
+                            <h2 class="font-semibold text-4xl pb-3 md:pb-0">ODIN</h2>
                         </a>
 
                         <p class="mt-4 leading-relaxed text-white/90">
-                            "Unlock Your Potential: Join the Learning Revolution!"
+                            "Desbloquea tu pontencial: ¡Unete a la revolución!"
                         </p>
                     </div>
                 </section>
@@ -27,12 +27,11 @@
 
                     <div class="max-w-md">
                         <div class="text-5xl font-dark font-bold">403</div>
-                        <p class="text-2xl md:text-3xl font-light leading-normal">Sorry you dont have permission. </p>
-                        <p class="mb-8">But dont worry, you can find plenty of other things on our homepage.</p>
+                        <p class="text-2xl md:text-3xl font-light leading-normal">SLo siento, no tienes permiso.</p>
+                        <p class="mb-8">"Pero no te preocupes, puedes encontrar muchas otras cosas en nuestra página de inicio."</p>
                         <a href="{{ route('homepage') }}">
                             <button id=""
-                                class="px-4 inline py-2 text-sm font-medium leading-5 shadow text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none focus:shadow-outline-blue bg-blue-600 active:bg-blue-600 hover:bg-blue-700">back
-                                to homepage</button>
+                                class="px-4 inline py-2 text-sm font-medium leading-5 shadow text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none focus:shadow-outline-blue bg-blue-600 active:bg-blue-600 hover:bg-blue-700">Ir al inicio</button>
                         </a>
 
                     </div>

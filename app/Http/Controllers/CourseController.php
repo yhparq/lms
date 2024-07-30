@@ -102,11 +102,11 @@ class CourseController extends Controller
     public function store(CreateCourseRequest $request)
     {
         if ($this->courseService->createCourse($request)) {
-            $message = 'Kursus berhasil ditambahkan';
+            $message = 'El curso se ha añadido con éxito';
 
             return redirect(route('course.index'))->with('success', $message);
         } else {
-            $message = 'Kursus gagal ditambahkan';
+            $message = 'El curso se ha añadido con éxito';
 
             return redirect(route('course.index'))->with('erorr', $message);
         }

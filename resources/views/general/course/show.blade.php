@@ -27,13 +27,13 @@
                             </span>
                         </div>
                         <div class="ml-4 text-gray-500">
-                            <p class="mt-1 text-gray-400">{{ count($course->lessons) }} Lesson</p>
+                            <p class="mt-1 text-gray-400">{{ count($course->lessons) }} Lección</p>
                         </div>
 
                     </div>
                 </div>
                 <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
-                    <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Description</p>
+                    <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Descripción</p>
                     <div class="flex items-center justify-center">
                         <p class="text-sm leading-none text-gray-600 dark:text-gray-300">{{ $course->description }}
                         </p>
@@ -43,12 +43,12 @@
                     @if ($course->price == 0)
                         <a href="{{ route('freeCourse', ['id_course' => $course->id]) }}"
                             class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-base flex items-center justify-center leading-none text-white bg-gradient-to-bl from-cyan-400 dark:from-purple-600 via-10% to-blue-500 dark:to-purple-700 shadow-inner shadow-zinc-100 dark:shadow-zinc-300 transition-all w-full py-4 hover:bg-gray-700 focus:outline-none rounded-lg">
-                            Start Free Course
+                            Comenzar curso gratuito
                         </a>
                     @else
                         <p>{{ $course->price }}</p>
                         <button class="px-6 py-2 text-white bg-indigo-500 rounded-md hover:bg-indigo-600">
-                            Enroll Now
+                            Matricúlate ahora
                         </button>
                     @endif
                 </div>
@@ -57,7 +57,7 @@
                     $no = 1;
                 @endphp
                 <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
-                    <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Course Content</p>
+                    <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Contenido del curso</p>
                     <p class="text-base leading-4 text-gray-800 dark:text-gray-300">{{ count($course->lessons) }}
                         sections • {{ $menit }} minutes total length</p>
                     <ul class="relative m-0 w-full list-none overflow-hidden p-0 transition-[height] duration-200 ease-in-out"
@@ -103,24 +103,17 @@
         <div class="bg-white dark:bg-[#303150]  py-6 sm:py-14">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
                 <div class="max-w-2xl mx-auto sm:text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Opsi Pembayaran
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Opciones de pago
                     </h2>
-                    <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-zinc-400">"Tidak ada kesalahan dalam
-                        berinvestasi pada
-                        pendidikan, Langkah ini adalah langkah bijak untuk
-                        masa depan yang cerah."</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-zinc-400">"No hay error en invertir en educación; este paso es una decisión sabia para un futuro brillante."</p>
                 </div>
                 <div
                     class="items-center max-w-2xl mx-auto mt-16 border shadow-inner rounded-3xl dark:border-none shadow-white dark:shadow-zinc-200 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none bg-white/5">
                     <div class="p-8 sm:p-10 lg:flex-auto">
-                        <h3 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Akses Selamanya</h3>
-                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-zinc-400">Nikmati akses tak terbatas ke
-                            komprehensif
-                            kami
-                            Konten kursus dan tingkatkan keterampilan Anda dengan sumber daya eksklusif kami.</p>
+                        <h3 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Acceso de por vida</h3>
+                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-zinc-400">"Disfruta de acceso ilimitado a nuestro contenido de curso completo y mejora tus habilidades con nuestros recursos exclusivos."</p>
                         <div class="flex items-center mt-10 gap-x-4">
-                            <h4 class="flex-none text-sm font-semibold leading-6 text-slate-800 dark:text-white">What’s
-                                Included</h4>
+                            <h4 class="flex-none text-sm font-semibold leading-6 text-slate-800 dark:text-white">¿Qué está incluido?</h4>
                             <div class="flex-auto h-px bg-gray-100"></div>
                         </div>
                         <ul role="list"
@@ -132,7 +125,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Akses Materi Kelas Premium
+                                Acceso a material del curso premium
                             </li>
                             <li class="flex gap-x-3 dark:text-zinc-400">
                                 <svg class="flex-none w-5 h-6 text-slate-800 dark:text-white" viewBox="0 0 20 20"
@@ -141,7 +134,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Konsultaisi dengan para mentor
+                                Consulta con los mentores
                             </li>
                             <li class="flex gap-x-3 dark:text-zinc-400">
                                 <svg class="flex-none w-5 h-6 text-slate-800 dark:text-white" viewBox="0 0 20 20"
@@ -150,7 +143,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Akses kelas dimana saja
+                                Accede a las clases en cualquier lugar
                             </li>
                             <li class="flex gap-x-3 dark:text-zinc-400">
                                 <svg class="flex-none w-5 h-6 text-slate-800 dark:text-white" viewBox="0 0 20 20"
@@ -159,7 +152,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Sertifikat kelulusan kursus
+                                Certificado de finalización del curso
                             </li>
                         </ul>
                     </div>
@@ -167,7 +160,7 @@
                         <div
                             class="py-10 text-center rounded-2xl ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                             <div class="max-w-xs px-8 mx-auto">
-                                <p class="text-base font-semibold text-gray-600 dark:text-white">Investasikan Sekarang</p>
+                                <p class="text-base font-semibold text-gray-600 dark:text-white">Invierte Ahora</p>
                                 <p class="flex items-baseline justify-center mt-6 gap-x-2">
                                     <span
                                         class="text-sm font-semibold leading-6 tracking-wide text-gray-600 dark:text-white">Rp</span>
@@ -175,10 +168,8 @@
                                         class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $course->price }}</span>
                                 </p>
                                 <a href="#"
-                                    class="mt-10 block w-full rounded-md bg-gradient-to-bl from-cyan-400 dark:from-purple-600 via-10% to-blue-500 dark:to-purple-700 shadow-inner shadow-zinc-100 dark:shadow-zinc-300 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enroll
-                                    Now</a>
-                                <p class="mt-6 text-xs leading-5 text-gray-600 dark:text-zinc-400">Receipts and Invoices for
-                                    Reimbursement
+                                    class="mt-10 block w-full rounded-md bg-gradient-to-bl from-cyan-400 dark:from-purple-600 via-10% to-blue-500 dark:to-purple-700 shadow-inner shadow-zinc-100 dark:shadow-zinc-300 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Inscríbete Ahora</a>
+                                <p class="mt-6 text-xs leading-5 text-gray-600 dark:text-zinc-400">Recibos y Facturas para Reembolso
                                 </p>
                             </div>
                         </div>

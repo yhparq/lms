@@ -18,9 +18,9 @@
                     data-accordion-target="#accordion-collapse-body-{{ $id }}" aria-expanded="false"
                     aria-controls="accordion-collapse-body-1" class="text-xs text-gray-40 cursor-pointer">
                     @if (count($replyCount) == 0)
-                        belum ada balasan
+                        Aún no hay respuesta
                     @else
-                        lihat {{ count($replyCount) }} balasan
+                        ver {{ count($replyCount) }} respuestas
                     @endif
                 </span>
             </div>

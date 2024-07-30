@@ -3,8 +3,8 @@
     <div
         class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center  w-full mx-auto bg-white dark:bg-[#303150] pr-3 pl-7">
         <div class="md:hidden">
-            <img src="{{ asset('landingpage/images/logo_dl.png') }}" class="w-8 h-8 dark:hidden" alt="" />
-            <img src="{{ asset('landingpage/images/logo_dl_dark.png') }}" class="w-8 h-8 dark:flex hidden"
+            <img src="{{ asset('landingpage/images/odinblack.png') }}" class="w-8 h-8 dark:hidden" alt="" />
+            <img src="{{ asset('landingpage/images/odinwhite.png') }}" class="w-8 h-8 dark:flex hidden"
             alt="" />
         </div>
         <a class="md:hidden md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0 md:pt-6 md:pt-12"

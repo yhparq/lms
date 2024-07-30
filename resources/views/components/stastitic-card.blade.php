@@ -30,7 +30,7 @@
                     </span>
                     @endif
                     <span class="whitespace-nowrap">
-                        sejak bulan lalu
+                        Desde el mes pasado
                     </span>
                 </p>
             </div>

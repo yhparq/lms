@@ -46,9 +46,9 @@
                 <div class="flex items-center justify-center text-slate-800">
                     <div class="relative inline-flex min-w-max">
                         <a href="/">
-                            <img src="{{ asset('landingpage/images/logo_dl.png') }}" class="w-full h-12 dark:hidden"
+                            <img src="{{ asset('landingpage/images/odinblack.png') }}" class="w-full h-12 dark:hidden"
                                 alt="" />
-                            <img src="{{ asset('landingpage/images/logo_dl_dark.png') }}"
+                            <img src="{{ asset('landingpage/images/odinwhite.png') }}"
                                 class="hidden w-full h-12 dark:flex" alt="" />
                         </a>
                     </div>
@@ -88,7 +88,7 @@
                     <form action="{{ route('course.search') }}">
                         <input type="search" name="search"
                             class="transition w-full text-xs rounded-full border-1 border-zinc-500 p-4 pl-12 bg-slate-100 outline-none dark:bg-[#303150] dark:text-white"
-                            placeholder="Cari Materi.." />
+                            placeholder="Buscar.." />
                     </form>
                 </div>
 
@@ -273,7 +273,7 @@
                     </span>
                     <input type="search"
                         class="w-full p-2 pl-10 text-xs transition border rounded-full outline-none border-slate-800 bg-slate-100 dark:text-white"
-                        placeholder="Cari Materi.." />
+                        placeholder="Buscar.." />
                 </div>
                 <ul class="mt-3 list-none ">
                     <li class="py-3">
@@ -435,7 +435,7 @@
 
                             <li>
                                 <a href="#" class="transition text-zinc-700 hover:opacity-75 dark:text-white">
-                                    Ver tododos los cursos
+                                    Ver todos los cursos
                                 </a>
                             </li>
 
@@ -539,7 +539,7 @@
             </div>
 
             <p class="text-xs text-center text-zinc-500 dark:text-white-500">
-                &copy; 2023. DNCC. All rights reserved.
+                &copy; 2023. Laboratorio Odin. Todos los derechos reservados.
             </p>
         </div>
     </footer>
@@ -551,10 +551,8 @@
         <div class="relative w-full max-w-sm max-h-full">
             <div class="relative bg-white shadow rounded-xl dark:bg-zinc-800">
                 <div class="px-0 pt-6 pb-0 text-center dark:text-white">
-                    <h1 class="my-2 text-xl font-medium text-center">Logout</h1>
-                    <h3 class="mt-2 mb-5 text-sm font-normal text-zinc-500 dark:text-zinc-400">anda yakin ingin
-                        melakukan
-                        logout?</h3>
+                    <h1 class="my-2 text-xl font-medium text-center">Cerrar sesión</h1>
+                    <h3 class="mt-2 mb-5 text-sm font-normal text-zinc-500 dark:text-zinc-400">¿Está seguro de que desea cerrar sesión?</h3>
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
                         {{-- <button type="submit"
@@ -565,13 +563,13 @@
                             <button data-modal-hide="popup-modal-logout" type="button"
                                 class="w-full overflow-hidden text-sm rounded-lg text-zinc-500 bg-zinc-200 hover:bg-zinc-100 focus:ring-4 hover:text-zinc-900 focus:z-10 dark:bg-zinc-700 dark:text-zinc-300 dark:border-zinc-500 dark:hover:text-white dark:hover:bg-zinc-600 dark:focus:ring-zinc-600">
                                 <div class="px-5 py-2 rounded-lg bg-zinc-200 dark:bg-zinc-700">
-                                    batal
+                                    si
                                 </div>
                             </button>
                             <button type="submit"
                                 class="z-50 w-full overflow-hidden text-sm rounded-lg text-zinc-500 focus:ring-4 focus:outline-none focus:ring-zinc-200 hover:text-zinc-900 focus:z-10 dark:bg-zinc-700 dark:text-zinc-300 dark:border-zinc-500 dark:hover:text-white dark:hover:bg-zinc-600 dark:focus:ring-zinc-600">
                                 <div class="px-5 py-2 text-white bg-red-600 ">
-                                    keluar
+                                    Cancelar
                                 </div>
                             </button>
                         </div>

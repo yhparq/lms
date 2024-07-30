@@ -9,20 +9,20 @@
         <div class="p-4 px-4 mb-6 bg-white rounded shadow-lg md:p-8">
             <div class="grid grid-cols-1 gap-4 text-sm gap-y-2 lg:grid-cols-3">
                 <div class="text-gray-600">
-                    <p class="text-lg font-medium">Personal Details</p>
-                    <p>Please fill out all the fields.</p>
+                    <p class="text-lg font-medium">Datos personales</p>
+                    <p>Por favor, complete todos los campos</p>
                 </div>
                 <div class="lg:col-span-2">
                     <div class="grid grid-cols-1 gap-4 text-sm gap-y-2 md:grid-cols-6">
                         <div class="md:col-span-6">
-                            <label for="name">Full Name</label>
+                            <label for="name">Nombre Completo</label>
                             <input type="text" name="name" id="name"
                                 class="w-full h-10 px-4 mt-1 border rounded bg-gray-50" value="{{ $user->name }}" />
                             <x-input-error class="mt-2" :messages="$errors->get('name')" />
                         </div>
 
                         <div class="md:col-span-6">
-                            <label for="email">Email Address</label>
+                            <label for="email">Correo electronico</label>
                             <input type="email" name="email" id="email"
                                 class="w-full h-10 px-4 mt-1 border rounded bg-gray-50" value="{{ $user->email }}"
                                 placeholder="email@domain.com" />
@@ -48,13 +48,13 @@
                         </div>
 
                         <div class="md:col-span-3">
-                            <label for="occupation">Ocupation</label>
+                            <label for="occupation">Ocupación</label>
                             <input type="text" name="occupation" id="occupation"
                                 class="w-full h-10 px-4 mt-1 border rounded bg-gray-50" value="{{ $user->occupation }}"
                                 placeholder="" />
                         </div>
                         <div class="md:col-span-3">
-                            <label for="office">Office / School</label>
+                            <label for="office">Oficina / Escuela</label>
                             <input type="text" name="office" id="office"
                                 class="w-full h-10 px-4 mt-1 border rounded bg-gray-50" value="{{ $user->office }}"
                                 placeholder="" />
@@ -62,7 +62,7 @@
 
 
                         <div class="md:col-span-6">
-                            <label for="bio">Bio</label>
+                            <label for="bio">Biografía</label>
                             <input type="text" name="bio" id="bio"
                                 class="w-full h-10 px-4 mt-1 border rounded bg-gray-50" value="{{ $user->bio }}" />
                         </div>
@@ -74,7 +74,7 @@
                                         class="text-sm text-gray-600">{{ __('Saved.') }}</p>
                                 @endif
                                 <button type="submit"
-                                    class="px-4 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-950">Submit</button>
+                                    class="px-4 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-950">Enviar</button>
 
                             </div>
                         </div>
