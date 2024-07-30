@@ -165,6 +165,46 @@
     </section>
     <!-- End Popular Courses Section -->
 
+
+
+
+
+{{--    start eventos section--}}
+    <!-- resources/views/home.blade.php -->
+    <section id="gallery" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="font-bold text-3xl text-center my-9 dark:text-white">EVENTOS ODIN</h2>
+            <h2 class="font-bold text-1xl text-center my-3 dark:text-white">¡no te pierdas el próximo!</h2>
+
+            <div class="swiper swiper-container-2 slide-container py-3 px-10">
+                <div class="swiper-wrapper">
+                    @foreach ($gallery as $image)
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="{{ asset('assets/gallery/' . $image) }}" alt="{{ $image }}" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                        </div>
+                    @endforeach
+                </div>
+                <div class="swiper-button-next rounded-full bg-slate-100 nav-btn"></div>
+                <div class="swiper-button-prev rounded-full bg-slate-100 nav-btn"></div>
+            </div>
+
+        </div>
+    </section>
+{{--    end eventos section --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Start FAQ Section -->
     <section id="faq">
         <div class="container mx-auto">
@@ -299,13 +339,10 @@ Dependiendo del tipo de curso que elijas, algunos cursos pueden requerir una tar
 
                                         <div class="mt-4">
                                             <p class="text-2xl font-bold text-slate-800 sm:text-3xl dark:text-white ">
-                                                Farhan kebab
+                                                Marco Raul Mamani Rodriguez
                                             </p>
                                             <p class="mt-4 leading-relaxed text-zinc-500">
-                                                “Mengandalkan kuliah saja, tidak cukup. Dengan DNCC Learn, saya mantap
-                                                tinggalkan dunia gaming lantas belajar dunia Android yang ternyata
-                                                menyenangkan. Yang nomor satu, DNCC Learn mengajarkan ilmu berorientasi
-                                                kerja. Kini saya sangat terbantu dalam karir saya.”
+                                                "Solo confiar en las clases no es suficiente. Con el Laboratorio odin, dejé el mundo de los videojuegos y comencé a aprender sobre desarrollo de apps, lo cual resultó ser divertido. Lo más importante es que Odin enseña conocimientos orientados al trabajo. Ahora, esto ha sido de gran ayuda en mi carrera."
                                             </p>
                                         </div>
                                     </div>
@@ -329,14 +366,38 @@ Dependiendo del tipo de curso que elijas, algunos cursos pueden requerir una tar
 
                                         <div class="mt-4">
                                             <p class="text-2xl font-bold text-slate-800 sm:text-3xl dark:text-white ">
-                                                Sigit rendang
+                                                Yoel Cristian Catacora Checalla
                                             </p>
 
                                             <p class="mt-4 leading-relaxed text-zinc-500">
-                                                “Saya khusus mendedikasikan waktu saya untuk belajar ngoding. Di DNCC
-                                                Learn belajarnya step by step, library-nya up-to-date. Kalau ada eror,
-                                                nggak bingung. Di sini saya juga belajar untuk nggak asal coding. CV pun
-                                                jadi bagus. Saya jadi percaya diri.”
+                                                "He dedicado mi tiempo específicamente a aprender a programar. En en Laboratorio Odin, el aprendizaje es paso a paso, y su biblioteca está actualizada. Si hay errores, no me confundo. Aquí también aprendí a no programar al azar. Incluso mi CV ha mejorado. Ahora tengo más confianza en mí mismo."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <blockquote class="flex flex-col justify-between bg-white p-12 h-96 dark:bg-[#1b1b36]">
+                                    <div>
+                                        @for($i = 0; $i < 5; $i++)
+                                            <div class="inline-flex gap-0.5 text-green-500">
+                                                <!-- star -->
+                                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            </div>
+                                        @endfor
+
+                                        <div class="mt-4">
+                                            <p class="text-2xl font-bold text-slate-800 sm:text-3xl dark:text-white ">
+                                                Daniel Cristian Ccopa Acero
+                                            </p>
+
+                                            <p class="mt-4 leading-relaxed text-zinc-500">
+                                                "La formación es completa y práctica, proporcionando las herramientas y técnicas necesarias para manejar grandes volúmenes de datos de manera efectiva. Los instructores están muy capacitados y ofrecen soporte continuo, lo que facilita el aprendizaje. Además, el enfoque orientado al mercado laboral asegura que adquieras habilidades directamente aplicables a tu carrera."
                                             </p>
                                         </div>
                                     </div>

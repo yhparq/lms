@@ -29,10 +29,15 @@ class HomeController extends Controller
 
         $latestCourse = $course->latest()->limit(8)->get();
 
+        $imagePath = public_path('assets/gallery');
+        $images = array_diff(scandir($imagePath), ['.', '..']);
+//        return view('home', compact('images'));
+
         return view('home', [
             'categories' => $category,
             'popularCourse' => $popularCourse,
             'latestCourse' => $latestCourse,
+            'gallery' => $images,
         ]);
     }
 

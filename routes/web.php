@@ -19,7 +19,7 @@ use App\Models\User;
 use App\Models\UserCourse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\GalleryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -91,6 +91,14 @@ Route::controller(LessonController::class)->group(function () {
         Route::delete('/lesson', 'delete')->name('lesson.delete');
     });
 });
+
+//Route::controller(GalleryController::class)->group(function () {
+//    // Route::get('/lesson', 'show')->middleware('auth')->name('lesson.show');
+//    Route::get('/', 'index')->name('galley.index');
+////    Route::post('/lesson/{id}/{chapter}', 'next')->name('lesson.next');
+//
+//});
+
 
 Route::controller(LessonCommentController::class)->group(function () {
     Route::post('/lesson-comment', 'store')->name('comment.store');
