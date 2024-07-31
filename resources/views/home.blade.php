@@ -3,11 +3,11 @@
     <!-- Start Header / Hero Section -->
     <header class="text-center justify-center bg-no-repeat bg-cover"
         style="
- background-image: url('landingpage/images/heroimage.jpeg');
+ background-image: url('landingpage/images/bg1.gif');
  background-attachment: fixed;
  background-position: center;
 ">
-        <div class="w-full bg-zinc-50 py-20 md:py-36 bg-opacity-90 dark:bg-zinc-800 dark:bg-opacity-80">
+        <div class="w-full bg-zinc-50 py-20 md:py-36 bg-opacity-70 dark:bg-zinc-800 dark:bg-opacity-70">
             <h2 class="text-6xl font-black mb-1 pb-1 md:pb-0 dark:text-white">
                 LABORATORIO ODIN
             </h2>
