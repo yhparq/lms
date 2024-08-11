@@ -13,26 +13,27 @@ class Controller extends BaseController
 
     public static $menuSidebarauthor = [
         '/dashboard' => ['dashboard', 'fa-solid fa-chart-line'],
-        '/course' => ['kursus anda', 'fa-solid fa-chalkboard'],
-        '/course-create' => ['tambah kursus', 'fa-solid fa-person-chalkboard'],
+        '/course' => ['tus cursos', 'fa-solid fa-chalkboard'],
+        '/course-create' => ['Añadir curso', 'fa-solid fa-person-chalkboard'],
         // '/member' => ['daftar transaksi', 'fa-solid fa-arrow-right-arrow-left'],
         // '/author/profile' => ['lihat profile', 'fa-solid fa-user'],
-        '/profile' => ['profile', 'fa-solid fa-user-pen'],
+        '/profile' => ['perfil', 'fa-solid fa-user-pen'],
     ];
 
     public static $memberMenuSidebar = [
         '/dashboard' => ['dashboard', 'fa-solid fa-chart-line'],
-        '/course' => ['kursus anda', 'fa-solid fa-chalkboard'],
-        '/transaction' => ['daftar transaksi', 'fa-solid fa-arrow-right-arrow-left'],
-        '/profile' => ['profile', 'fa-solid fa-user-pen'],
+        '/course' => ['tus cursos', 'fa-solid fa-chalkboard'],
+        '/transaction' => ['lista de transacciones', 'fa-solid fa-arrow-right-arrow-left'],
+        '/profile' => ['perfil', 'fa-solid fa-user-pen'],
     ];
 
     public static $menuSidebarAdmin = [
-        '/dashboard' => ['dashboard', 'fa-solid fa-chart-line'],
-        '/users' => ['Users', 'fa-solid fa-chalkboard'],
+        '/dashboard' => ['Dashboard', 'fa-solid fa-chart-line'],
+        '/users' => ['Usuario', 'fa-solid fa-chalkboard'],
         '/roles' => ['Roles', 'fa-solid fa-person-chalkboard'],
-        '/category-admin' => ['Category', 'fa-solid fa-arrow-right-arrow-left'],
-        '/course-admin' => ['Course', 'fa-solid fa-user'],
-        '/profile' => ['profile', 'fa-solid fa-user-pen'],
+        '/category-admin' => ['Categorias', 'fa-solid fa-arrow-right-arrow-left'],
+        '/course-admin' => ['Cursos', 'fa-solid fa-user'],
+        '/admin-course' => ['cursos del usuario', 'fa-solid fa-user'],
+        '/profile' => ['Perfil', 'fa-solid fa-user-pen'],
     ];
 }

@@ -3,10 +3,10 @@
     <div class="w-full mx-auto items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
         <div class="">
 
-            <a class=" text-lg uppercase hidden lg:inline-block font-medium" href="">
+            <a class=" text-amber-50 text-lg uppercase hidden lg:inline-block font-medium" href="">
                 Dashboard {{ request()->user()->roles[0]['name'] }}
             </a>
-            <div class="text-zinc-500 hidden lg:block dark:text-zinc-400">
+            <div class="text-zinc-400 hidden lg:block dark:text-zinc-400">
                 Bienvenido {{ auth()->user()->name }}
             </div>
         </div>
@@ -39,7 +39,7 @@
                 </div>
             </ul>
             <form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
-                <div class="relative flex w-full flex-wrap items-stretch text-lg font-medium">
+                <div class="relative flex w-full flex-wrap items-stretch text-lg font-medium text-amber-50 ">
                     {{ auth()->user()->name }}</div>
             </form>
         </div>

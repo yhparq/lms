@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\Spatie\PermissionController;
 use App\Http\Controllers\Spatie\RoleController;
+use App\Http\Controllers\AdminCourseController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VoucherController;
 use Illuminate\Support\Facades\Route;
@@ -84,5 +85,10 @@ Route::middleware('role:admin')->group(function () {
     });
 
     //index course
+    Route::controller(AdminCourseController::class)->group(function () {
+        Route::get('/admin-course', 'index')->name('adminCourse.index');
+        Route::put('/admin-course/{adminCourse}', 'updateStatus')->name('adminCourse.update');
+        Route::get('/admin-course', 'indexAdmin')->name('course.index.admin');
+    });
 
 });

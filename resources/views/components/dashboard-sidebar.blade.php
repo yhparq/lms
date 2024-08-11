@@ -9,7 +9,7 @@
         </div>
         <a class="md:hidden md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0 md:pt-6 md:pt-12"
             href="/">
-            DevLearn
+            LABORATORIO ODIN
         </a>
         <div class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded hidden"
             id="example-collapse-sidebar">
@@ -19,7 +19,7 @@
                         <a class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                             href="/author">
                             <span>
-                                DevLearn
+                                LABORATORIO ODIN
                             </span>
                         </a>
                     </div>
@@ -35,11 +35,11 @@
             </div>
             <a class="hidden md:flex items-center text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap uppercase p-4 px-0"
                 href="/">
-                <img src="{{ asset('landingpage/images/logo_dl.png') }}" class="w-12 h-12 dark:hidden" alt="" />
-                <img src="{{ asset('landingpage/images/logo_dl_dark.png') }}" class="w-12 h-12 dark:flex hidden"
+                <img src="{{ asset('landingpage/images/odinblack.png') }}" class="w-12 h-12 dark:hidden" alt="" />
+                <img src="{{ asset('landingpage/images/odinwhite.png') }}" class="w-12 h-12 dark:flex hidden"
                     alt="" />
                 <span class="text-xl font-semibold">
-                    DevLearn
+                    LABORATORIO ODIN
                 </span>
             </a>
             <!-- Divider -->
